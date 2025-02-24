@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado de Funciones y sus Propósitos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    h1, h2 { color: #2c3e50; }
+    ul { list-style-type: disc; margin-left: 40px; }
+    li { margin-bottom: 5px; }
+    .nota { color: #c0392b; }
+  </style>
+</head>
+<body>
+  <h1>Listado de Funciones y sus Propósitos</h1>
+  <p>
+    A continuación se presenta el listado de funciones (identificadores en formato de siglas con guiones bajos) extraídas del texto de SoundRTS versión 1.3.8.2. Que si no lo tenemos así a mano, no se va a acordar ni tu prima de que hace cada uno. Es más, yo ni así me acuerdo
+  </p>
+
+  <h2>1. Funciones de Captura</h2>
+  <ul>
+    <li><strong>capture_success</strong>: Indica que la operación de captura se realizó con éxito al alcanzar el umbral de HP.</li>
+    <li><strong>target_captured</strong>: Señala que el objetivo ha sido capturado tras la operación de captura.</li>
+  </ul>
+
+  <h2>2. Funciones para Proyectiles y Modificaciones en Terreno</h2>
+  <ul>
+    <li><strong>mdg_projectile</strong>: Activa (1) o desactiva (0) la simulación de proyectiles, permitiendo que unidades a distancia en terreno elevado ganen rango adicional.</li>
+    <li><strong>rdg_projectile</strong>: Activa (1) o desactiva (0) la simulación de proyectiles para unidades a distancia en terreno elevado.</li>
+    <li><strong>mdg_cover_on_terrain</strong>: Ajusta la tasa de acierto de ataques en función del terreno.</li>
+    <li><strong>rdg_cover_on_terrain</strong>: Ajusta la tasa de acierto de ataques a distancia en función del terreno.</li>
+    <li><strong>mdg_dodge_on_terrain</strong>: Modifica la tasa de evasión en ataques según el terreno.</li>
+    <li><strong>rdg_dodge_on_terrain</strong>: Modifica la tasa de evasión en ataques a distancia según el terreno.</li>
+    <li>
+      <strong>mdg_blic</strong> y <strong>rdg_blic</strong>: Originalmente se usaban para simular la trayectoria en arco (utilizando el retardo de impacto) de los ataques, ahora ya se murió; 
+      <span class="nota">nota: No se usa...</span>
+    </li>
+  </ul>
+
+  <h2>3. Funciones del Sistema de HP</h2>
+  <ul>
+    <li><strong>hp_start</strong>: Establece la HP inicial de una unidad.</li>
+    <li><strong>hp_start_vs</strong>: Ajusta la HP inicial para unidades específicas (requiere pruebas).</li>
+    <li><strong>hp_max_vs</strong>: Ajusta la HP máxima para unidades específicas (requiere pruebas).</li>
+  </ul>
+
+  <h2>4. Funciones del Sistema de Daño</h2>
+  <ul>
+    <li><strong>mdg</strong>: Define el daño cuerpo a cuerpo (melee_damage).</li>
+    <li><strong>rdg</strong>: Define el daño a distancia (range_damage).</li>
+    <li><strong>mdg_vs</strong>: Ajusta el daño cuerpo a cuerpo específicamente contra ciertas unidades.</li>
+    <li><strong>rdg_vs</strong>: Ajusta el daño a distancia específicamente contra ciertas unidades.</li>
+    <li><strong>mdg_range</strong>: Define el rango de ataque para ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_range</strong>: Define el rango de ataque para ataques a distancia.</li>
+    <li><strong>mdg_minimal_range</strong>: Establece el rango mínimo para ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_minimal_range</strong>: Establece el rango mínimo para ataques a distancia.</li>
+    <li><strong>mdg_range_vs</strong>: Ajusta el rango de ataque cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>rdg_range_vs</strong>: Ajusta el rango de ataque a distancia para unidades específicas.</li>
+    <li><strong>mdg_minimal_range_vs</strong>: Ajusta el rango mínimo de ataque cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>rdg_minimal_range_vs</strong>: Ajusta el rango mínimo de ataque a distancia para unidades específicas.</li>
+    <li><strong>mdg_delay</strong>: Especifica el retardo antes de que un ataque cuerpo a cuerpo impacte.</li>
+    <li><strong>rdg_delay</strong>: Especifica el retardo antes de que un ataque a distancia impacte.</li>
+    <li><strong>damage_seq</strong>: Configura la secuencia de daño en un ataque, determinando los valores y el intervalo entre golpes.</li>
+    <li><strong>mdg_splash</strong>: Permite asignar un valor ajustable para el daño de salpicadura en ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_splash</strong>: Permite asignar un valor ajustable para el daño de salpicadura en ataques a distancia.</li>
+    <li><strong>mdg_radius</strong>: Define el radio del área de daño de salpicadura en ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_radius</strong>: Define el radio del área de daño de salpicadura en ataques a distancia.</li>
+    <li><strong>mdg_splash_decay</strong>: Establece la disminución del daño de salpicadura (falloff) en ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_splash_decay</strong>: Establece la disminución del daño de salpicadura (falloff) en ataques a distancia.</li>
+  </ul>
+
+  <h2>5. Funciones del Sistema de Defensa</h2>
+  <ul>
+    <li><strong>mdf</strong>: Define la defensa cuerpo a cuerpo (melee_defense).</li>
+    <li><strong>rdf</strong>: Define la defensa a distancia (range_defense).</li>
+    <li><strong>mdf_vs</strong>: Ajusta la defensa cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>rdf_vs</strong>: Ajusta la defensa a distancia para unidades específicas.</li>
+  </ul>
+
+  <h2>6. Funciones de Enfriamiento y Preparación de Ataques</h2>
+  <ul>
+    <li><strong>mdg_cd</strong>: Define el tiempo de enfriamiento para ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_cd</strong>: Define el tiempo de enfriamiento para ataques a distancia.</li>
+    <li><strong>mdg_cd_vs</strong>: Ajusta el tiempo de enfriamiento de ataques cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>rdg_cd_vs</strong>: Ajusta el tiempo de enfriamiento de ataques a distancia para unidades específicas.</li>
+    <li><strong>mdg_ready</strong>: Especifica el tiempo de preparación antes de ejecutar un ataque cuerpo a cuerpo.</li>
+    <li><strong>rdg_ready</strong>: Especifica el tiempo de preparación antes de ejecutar un ataque a distancia.</li>
+    <li><strong>mdg_ready_vs</strong>: Ajusta el tiempo de preparación en ataques cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>rdg_ready_vs</strong>: Ajusta el tiempo de preparación en ataques a distancia para unidades específicas.</li>
+  </ul>
+
+  <h2>7. Funciones de Precisión y Evasión</h2>
+  <ul>
+    <li><strong>mdg_cover</strong>: Define la tasa de acierto (precisión) en ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_cover</strong>: Define la tasa de acierto (precisión) en ataques a distancia.</li>
+    <li><strong>mdg_cover_vs</strong>: Ajusta la precisión en ataques cuerpo a cuerpo contra unidades específicas.</li>
+    <li><strong>rdg_cover_vs</strong>: Ajusta la precisión en ataques a distancia contra unidades específicas.</li>
+    <li><strong>mdg_dodge</strong>: Especifica la tasa de evasión en ataques cuerpo a cuerpo.</li>
+    <li><strong>rdg_dodge</strong>: Especifica la tasa de evasión en ataques a distancia.</li>
+    <li><strong>mdg_dodge_vs</strong>: Ajusta la tasa de evasión en ataques cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>rdg_dodge_vs</strong>: Ajusta la tasa de evasión en ataques a distancia para unidades específicas.</li>
+  </ul>
+
+  <h2>8. Funciones de Velocidad y Movimiento</h2>
+  <ul>
+    <li><strong>speed</strong>: Define la velocidad base de movimiento de una unidad.</li>
+    <li><strong>speed_vs</strong>: Ajusta la velocidad de movimiento para unidades específicas (requiere pruebas).</li>
+  </ul>
+
+  <h2>9. Funciones del Comportamiento en Vehículos</h2>
+  <ul>
+    <li><strong>allow_units_attack</strong>: Permite que unidades específicas ataquen objetivos externos mientras están dentro de un vehículo.</li>
+    <li><strong>allow_units_add</strong>: Otorga bonificaciones de atributos a vehículos al cargar unidades.</li>
+  </ul>
+
+  <h2>10. Funciones del Sistema de Sonido</h2>
+  <ul>
+    <li><strong>mdg_missed</strong>: Reemplaza la función de "missed" en ataques cuerpo a cuerpo para efectos sonoros.</li>
+    <li><strong>rdg_missed</strong>: Reemplaza la función de "missed" en ataques a distancia para efectos sonoros.</li>
+    <li><strong>launch_matk</strong>: Sustituye el lanzamiento de ataque en efectos sonoros para ataques cuerpo a cuerpo.</li>
+    <li><strong>launch_ratk</strong>: Sustituye el lanzamiento de ataque en efectos sonoros para ataques a distancia.</li>
+    <li><strong>matk_hit</strong>: Reemplaza el sonido de impacto en ataques cuerpo a cuerpo.</li>
+    <li><strong>ratk_hit</strong>: Reemplaza el sonido de impacto en ataques a distancia.</li>
+    <li><strong>matk_dodge_vs</strong>: Permite configurar efectos sonoros diferenciados de esquiva en ataques cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>ratk_dodge_vs</strong>: Permite configurar efectos sonoros diferenciados de esquiva en ataques a distancia para unidades específicas.</li>
+    <li><strong>matk_hit_vs</strong>: Permite configurar efectos sonoros diferenciados de impacto en ataques cuerpo a cuerpo para unidades específicas.</li>
+    <li><strong>ratk_hit_vs</strong>: Permite configurar efectos sonoros diferenciados de impacto en ataques a distancia para unidades específicas.</li>
+    <li><strong>disappear</strong>: Reproduce un efecto sonoro cuando las unidades invocadas expiran (diferente del sonido de muerte).</li>
+    <li><strong>shouts</strong>: Activa un grito de batalla cuyo volumen aumenta conforme crece el número de unidades en combate.</li>
+  </ul>
+
+  <h2>11. Funciones del Sistema de Recursos</h2>
+  <ul>
+    <li><strong>resource_type</strong>: Define el tipo de recurso como cadena (por ejemplo, "gold" o "wood") en lugar de un valor numérico.</li>
+  </ul>
+</body>
+</html>

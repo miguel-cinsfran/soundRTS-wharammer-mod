@@ -1,0 +1,190 @@
+Odian a los pielesverdes.
+Resistencia racial a la magia.
+Avance imparable: Avanzan mas lentos pero se ven menos influidos por las limitaciones de los terrenos y no les afecta cargar armaduras ni equipo.
+Movimiento infantería: 8 (ajustarlo)
+
+
+Equipo:
+ARmadura de gromril, mas poderosa que las de otras razas.
+ARcabuz: Alcance de arco largo
+Pistola: Cuentan como dos armas de mano dan golpes y disparan a corta distancia, penetran armaduras.
+
+
+Habilidades:  a ver como podemos adaptarlas
+Piedra del juramento: Una unidad forma entorno a la piedra y son imposibles de mover de ahí por que la defiendne con su vida.
+Tatuajes de grimnir: Unos tatuajes de su dios que los hacen evitar hechizos que se formulan a su alrrededor y resistirlos mejor.
+Runas mágicas: la magia de los enanos va por runas en el libro se describen todas alomejor podemos copiar ideas.
+
+
+Unidades:
+
+
+Yunque:
+Edificio móvil, lanza hechizos rúnicos, lleva un señor de las runas que es como el mago de los enanos y dos guardianes del yunque.
+Hay hechizos que lanza definidos en el libro a ver que podemos aprovechar, serían habilidades del edificio
+
+
+Unidades básicas:
+
+Guerrero enano:
+Coste: 8.
+Habilidad 4, fuerza 4, resistencia 3
+ARmadura pesada y arma de mano
+Evolución a guerrero enano con armadura pesada, escudo y arma de mano.
+ evolución a guerrero enano con armadura pesada y arma a dos manos
+Evolución a escoger entre una o la otra
+
+Barbalarga:
+Son guerreros enanos mas veteranos.
+Podrían evolucionar de guerreros enanos?
+HABILIDAD: 5, Fuerza: 4, Resistencia: 4
+No puede haber mas barbaslargas que guerreros enanos.
+Coste: 11
+ARmadura pesada y arma de mano.
+Evolución a barbalarga con armadura pesada y arma a 2 manos
+Evolución a barbaralarga con armadura pesada, arma de mano y escudo
+Evolución a elegir entre una o la otra.
+
+Montaraces:
+Habilidad 4, Fuerza 3, Resistencia 4
+Coste: 11. 
+Pueden evolucionar a montaraces barbaslargas.
+ARmadura pesada y arma de mano.
+Pueden llevar hachas arrojadizas. Un ataque a corta distancia cada mucho tiempo o habilidad.
+Evolución a montaraz con armadura pesada y escudo.
+Evolución a montaraz con armadura pesada y arma a dos manos.
+Evolución a montaraces ballesteros: ballesta, armadura ligera, no hachas arrojadizas.
+Son exploradores, cruzan terreno dificil sin problema.
+
+Ballesteros enanos:
+Coste: 11
+Habilidad: 4, Fuerza: 3, Resistencia: 4
+ARmadura ligera y arma de mano.
+Evolución a ballestero con armadura ligera y arma a dos manos
+Evolución a ballestero con armadura ligera y escudo.
+Evolución a elegir.
+Todos llevan ballesta
+
+ATronadores:
+Habilidad 4, fuerza 3, resistencia 3
+Coste: 14
+Armadura ligera y arma de mano.
+Llevan arcabuz enano, arma especial
+
+
+Unidades especiales:
+
+Martilladores:
+Habilidad 5, fuerza 4, resistencia 4
+Coste: 12
+armadura pesada y arma a dos manos
+ESto me lo invento: El arma a 2 manos puede ser un martillo enano, arma especial enana mas dopada y que machaca armaduras.
+
+Matadores:
+no tienen armadura pero penetran mejor las armaduras enemigas.
+En el juego estan limitados, quizás limite al numero.
+Pueden cambiar en cualquier momento a dos armas de mano o un arma de 2 manos, Evolución instantánea?
+Hacen mas daño a unidades de clase monstruo.
+Hay matatrolls y matagigantes, quizás cada uno podría hacer aún mas daño a su monstruo concreto.
+Están locos y son mal vistos entre los enanos, quizás se pueda representar de alguna manera.
+Habilidad 4, fuerza 3, resistencia 4
+Coste: 11
+
+
+Mineros enanos:
+Van por túneles bajo tierra y aparecen en cualquier lugar derrepente.
+Quizás invisibles? o con habilidad de teleportación o similar.
+Quizás podrían ser trabajadores también?
+Habilidad 4, fuerza 3, resistencia 4.
+Coste: 11
+Arma a dos manos, pico (no muy poderosa pero con cadencia y alcance de arma a 2 manos)
+Cargas explosivas: arma arrojadiza de un solo uso, quizás habilidad con coste de mana, pero ellos no tienen recuperación de mana solo mana inicial.
+Las cargas explosivas hacen daño tipo fuego.
+
+
+Rompehierros:
+Habilidad 5, fuerza 4, resistencia 4
+Coste: 13
+arma de mano, armadura de gromril, escudo
+No pegan demasiado, cadencia alcance y daño de un arma de mano, pero entre la armadura y el escudo son tanques
+
+
+Artillería:
+
+
+Cañón enano:
+Coste: 90
+Evolución: podría evolucionar a cañón enano con ingeniero artillero, que podría mejorar la cadencia, la puntería el alcance etc.
+Daño alto, cadencia de fuego lenta, alcance alto.
+Daña construcciones.
+Quizás daño especial contra otras artillerías
+Una unidad de infantería puede apartarse o tirarse al suelo pero si te meten un cañonazo  a otro cañon o una catapulta se va a la puta directamente.
+Daño especial contra monstruos: Si le dan un cañonazo a un gigante pues por muy gigante que sea pa soele que se va.
+El rango mínimo es pequeño, por que pones el cañon horizontal y puedes disparar a lo que te viene sin problema.
+Los artilleros llevan armadura ligera y arma de mano, por lo que en cuepro a cuerpo pueden defenderse, hay que ver si se puede hacer que no ataquen, solo se defiendan.
+Si el cañon es evolución a cañon con ingeniero pueden llevar pistolas los artilleros.
+Como lleva ruedas el movimiento es el mismo que el de las unidades de infantería en terreno normal.
+Como pesa mucho en cienagas se hunde y se destruye.
+En bosques puede pasar pero se relentiza mucho.
+
+
+Lanzaagravios: catapulta enana
+Coste: 80
+Evolución a lanzaagravios con ingeniero de artillería.
+La dotación lleva armadura ligera y arma de mano.
+El rango inferior es muy alto, solo es útil a muy largas distancias.
+El alcance es muy alto y el daño muy alto.
+La cadencia de fuego es muy lenta, mas lenta que el cañon.
+Daño especial contra construcciones y contra infantería.
+Quizás poco daño o ninguno contra monstruos ya que ven venir el pedrolo se apartan y listo.
+ velocidad de movimiento muy lenta, pesa mucho, se atasca en todas partes.
+No puede pasar por ningun terreno dificil, ni bosques ni cienagas ni montañas.
+
+
+Lanzavirotes enano, balista.
+Coste: 50
+No daño contra edificios.
+Daño bestia contra monstruos.
+Contra infantería... no lo tengo claro.
+Cadencia de disparo lenta, alcance medio o largo, como el cañon o menos... no lo tengo claro.
+No es tan pesada como la catapulta, tiene las mismas restricciones que el cañon.
+Evolución a lanzavirotes con ingeniero de artillería.
+
+
+Unidades singulares:
+En el juego de mesa las unidades singulares tienen un límite global, por lo que solo puedes escoger alguna y tienes que renunciar a las demás, se supone que son unidades muy específicas y escasas.
+Podemos simular esto con herencias o pasar de ello, a mi me gusta.
+
+Enanos montañeses:
+Se mueven por las montañas con mucha facilidad.
+Habilidad 4, resistencia 3, fuerza 4
+Coste: 15
+ARmadura ligera, Arma de mano y arcabuz enano.
+Pueden cambiar en cualquier momento a arcabuz montañes, tiene la mitad de alcance del arcabuz enano pero es de repetición. Menos fuerza, no penetra tanto armaduras pero muchos ataques.
+
+
+Cañón lanzallamas:
+Unidad tipo artillería.
+Coste: 130
+ARtilleros con arma de mano y armadura ligera.
+Alcance corto, la mitad que un arcabuz enano.
+Daño de área, ver si podemos poner en ese lugar un fuego que haga daño hasta que se apaga.
+Daño alto tipo fuego.
+Quiero ver si podemos hacer que el daño tipo fuego anule la regeneración de una unidad. Regeneración sería una nidad que se cura ella sola cada x tiempo, como los trolls por ejemplo, el fuego debería anular eso.
+
+
+Girocóptero:
+Unidad voladora.
+Se considera tipo monstruo.
+Coste: 140
+No es muy resistente.
+Dispara igual que el lanzallamas pero con mucho menos alcance y mucho menos daño
+Es rápido.
+
+Cañón órgano:
+En el juego puedes tener 1 como máximo.
+Se considera artillería
+ARtilleros con arma de mano y armadura.
+Llega a la distancia de un arcabuz.
+Son 4 o 6 cañonazos de cada vez, hay que balancearlo, son como 4 cañones unidos pero con menos potencia.
+

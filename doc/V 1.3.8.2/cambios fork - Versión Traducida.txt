@@ -1,0 +1,120 @@
+1.3.8.2 - Ultimate
+Nuevas Características y Mejoras:
+Añadida Funcionalidad de Captura de Propiedad
+Cuando la salud (HP) de un edificio o unidad objetivo alcanza el umbral de captura, nuestras unidades pueden ejecutar una operación de captura.
+Un ejemplo simple son las murallas y puertas, donde el umbral de captura está establecido en 30% de HP, aunque este valor puede ser ajustado por el jugador.
+Las palabras clave relacionadas en style.txt son capture_success y target_captured.
+Añadidos Identificadores para Mecánicas de Proyectiles:
+mdg_projectile y rdg_projectile: Establecer en 0 para deshabilitar y 1 para habilitar. Estos identificadores permiten a las unidades a distancia ubicadas en terreno elevado ganar alcance adicional.
+mdg_cover_on_terrain y rdg_cover_on_terrain
+mdg_dodge_on_terrain y rdg_dodge_on_terrain
+Estos permiten modificaciones específicas de tasa de acierto y evasión para unidades en cualquier terreno.
+Identificadores Eliminados:
+Los identificadores mdg_blic y rdg_blic han sido eliminados.
+Mejoras en Mecánicas de Vehículos cerca de Salidas:
+Los vehículos construidos cerca de salidas ahora tienen funcionalidad mejorada:
+Las murallas o puertas colocadas cerca de una salida ahora pueden interactuar con cualquier lado de la salida, permitiendo que las unidades carguen o descarguen desde cualquier lado.
+Los trabajadores ubicados en cualquier lado de la salida pueden reparar simultáneamente murallas o puertas.
+Independientemente del lado de la salida en que se encuentre el observador, pueden ver tanto el contenedor como las unidades dentro de él.
+Corrección de Errores:
+Corregida la imposibilidad de mapear teclas rápidas para resource3 o superior en bindings.txt.
+Corregidos problemas con los siguientes identificadores que no funcionaban correctamente:
+mdg_ready y rdg_ready, incluyendo mdg_ready_vs y rdg_ready_vs.
+mdg_cd_vs y rdg_cd_vs.
+Corregidos errores que afectaban a mdg_range_vs, rdg_range_vs, y minimal_range_vs que no funcionaban como se esperaba.
+Resuelto un problema donde las unidades dentro de contenedores no reproducían efectos de sonido de impacto al atacar objetivos externos.
+Después de dos meses de arduo trabajo, he mejorado SoundRTS, transformándolo en un motor relativamente abierto y altamente flexible.
+Sin embargo, debido a la energía personal limitada y la imposibilidad de cubrir todos los aspectos por mi cuenta, requiero la ayuda de un gran número de jugadores para ayudar con las pruebas.
+Además, espero que SoundMUD pueda proporcionar orientación.
+¡Esta versión está lejos de ser la versión final, y continuaré mejorándola más - por favor, estén atentos a futuras actualizaciones!
+1. Mejoras Importantes en Propiedades de Unidades
+Sistema de HP:
+hp_start: Permite establecer el HP inicial de una unidad.
+hp_start_vs: Ajusta hp_start específicamente para ciertas unidades (necesita pruebas).
+hp_max_vs: Ajusta hp_max específicamente para ciertas unidades (necesita pruebas).
+Sistema de Daño:
+El campo de daño anterior ha sido reemplazado con los siguientes tipos de daño:
+mdg (melee_damage): Especifica daño cuerpo a cuerpo.
+rdg (range_damage): Especifica daño a distancia.
+mdg_vs: Ajusta el daño cuerpo a cuerpo (mdg) específicamente contra ciertas unidades.
+rdg_vs: Ajusta el daño a distancia (rdg) específicamente contra ciertas unidades.
+Nuevos campos relacionados con el alcance:
+mdg_range: Reemplaza el campo único de alcance para ataques cuerpo a cuerpo.
+rdg_range: La misma funcionalidad para ataques a distancia.
+mdg_minimal_range: Reemplaza el campo único minimal_range para ataques cuerpo a cuerpo.
+rdg_minimal_range: La misma funcionalidad para ataques a distancia.
+mdg_range_vs: Ajusta el alcance cuerpo a cuerpo (mdg_range) específicamente para ciertas unidades.
+rdg_range_vs: Ajusta el alcance a distancia (rdg_range) específicamente para ciertas unidades.
+mdg_minimal_range_vs: Ajusta el alcance mínimo cuerpo a cuerpo (mdg_minimal_range) específicamente para ciertas unidades.
+rdg_minimal_range_vs: Ajusta el alcance mínimo a distancia (rdg_minimal_range) específicamente para ciertas unidades.
+Nuevos campos relacionados con el objetivo:
+mdg_targets: Reemplaza los target_types anteriores para ataques cuerpo a cuerpo.
+rdg_targets: Reemplaza los target_types anteriores para ataques a distancia.
+Retraso de ataque y simulación de proyectiles:
+mdg_delay: Especifica el retraso antes de que un ataque cuerpo a cuerpo golpee su objetivo. Por ejemplo, mdg_delay 0.2 significa que un ataque tarda 0.2 segundos en golpear después de ser lanzado (una simulación del tiempo de viaje del proyectil).
+rdg_delay: La misma funcionalidad para ataques a distancia.
+mdg_blic/rdg_blic: Usado para definir el comportamiento de "arco" del proyectil (aunque no son proyectiles reales, es una simulación usando retraso de impacto).
+Daño de área:
+mdg_splash: Reemplaza el campo binario splash con valores ajustables (no solo 0 o 1).
+rdg_splash: La misma funcionalidad para ataques a distancia.
+mdg_radius: Reemplaza el campo único damage_radius para daño de área cuerpo a cuerpo.
+rdg_radius: La misma funcionalidad para daño de área a distancia.
+mdg_splash_decay: Especifica la disminución del daño de área para ataques cuerpo a cuerpo.
+rdg_splash_decay: Especifica la disminución del daño de área para ataques a distancia.
+Mejoras en el Sistema de Defensa:
+El campo de armadura anterior ha sido reemplazado con los siguientes tipos de defensa:
+mdf (melee_defense): Especifica defensa cuerpo a cuerpo.
+rdf (range_defense): Especifica defensa a distancia.
+mdf_vs: Ajusta la defensa cuerpo a cuerpo (mdf) específicamente para ciertas unidades.
+rdf_vs: Ajusta la defensa a distancia (rdf) específicamente para ciertas unidades.
+Tiempo de Reutilización de Ataques y Retrasos Pre-Impacto:
+mdg_cd: Reemplaza el campo único de tiempo de reutilización para ataques cuerpo a cuerpo.
+rdg_cd: Lo mismo para ataques a distancia.
+mdg_cd_vs: Ajusta mdg_cd específicamente para ciertas unidades.
+rdg_cd_vs: Ajusta rdg_cd específicamente para ciertas unidades.
+mdg_ready: Especifica el tiempo de preparación de ataque cuerpo a cuerpo.
+rdg_ready: Especifica el tiempo de preparación de ataque a distancia.
+mdg_ready_vs: Ajusta mdg_ready específicamente para ciertas unidades.
+rdg_ready_vs: Ajusta rdg_ready específicamente para ciertas unidades.
+Precisión y Evasión:
+mdg_cover: Especifica tasa de acierto cuerpo a cuerpo.
+rdg_cover: Especifica tasa de acierto a distancia.
+mdg_cover_vs: Ajusta mdg_cover específicamente para ciertas unidades.
+rdg_cover_vs: Ajusta rdg_cover específicamente para ciertas unidades.
+mdg_dodge: Especifica tasa de evasión cuerpo a cuerpo.
+rdg_dodge: Especifica tasa de evasión a distancia.
+mdg_dodge_vs: Ajusta mdg_dodge específicamente para ciertas unidades.
+rdg_dodge_vs: Ajusta rdg_dodge específicamente para ciertas unidades.
+Velocidad de Movimiento:
+speed: Especifica la velocidad base de movimiento de una unidad.
+speed_vs: Ajusta la velocidad específicamente para ciertas unidades (necesita pruebas).
+Sistema de Secuencia de Ataque:
+Por ejemplo:
+mdg 12
+mdg_cd 1.5
+mdg_range 6
+damage_seq mdg 3 (damage 6 3 3) (interval 0.2)
+Esta configuración establece una secuencia de ataque cuerpo a cuerpo que ejecuta tres ataques de 6, 3 y 3 de daño (totalizando mdg 12) en intervalos de 0.2 segundos cada uno.
+2. Comportamiento de Unidades en Vehículos: allow_units_attack: Permite que unidades específicas ataquen objetivos externos mientras están dentro de un vehículo. Por ejemplo: allow_units_attack archer: Permite que los arqueros ataquen desde vehículos. allow_units_attack archer footman: Permite que múltiples unidades (arquero, soldado de infantería) ataquen desde vehículos. allow_units_attack all: Permite que todas las unidades ataquen desde vehículos. Por defecto, las unidades no pueden atacar desde vehículos a menos que se especifique.
+allow_units_add: Otorga bonificaciones de atributos a vehículos al cargar unidades.
+Por ejemplo:
+allow_units_add speed 0.5: Cada unidad cargada añade 0.5 de velocidad de movimiento al vehículo.
+Se pueden especificar múltiples bonificaciones, como:
+allow_units_add speed 0.5 mdg 2 mdg_cd 1.5.
+3. Mejoras en el Sistema de Mejoras: Ahora, las mejoras pueden definirse de manera flexible: Por ejemplo: def melee_weapon_and_defense class upgrade cost 8 10 time_cost 60 effect bonus mdg 1 mdf 2
+También se admiten mejoras multinivel:
+def lv1_melee_weapon
+class upgrade
+effect apply_bonus mdg
+def lv2_melee_weapon
+is_a lv1_melee_weapon
+def lv3_melee_weapon
+is_a lv2_melee_weapon
+def footman
+class soldier
+mdg_bonus 1 1 2  # Añade 1 mdg para las primeras dos mejoras, y 2 mdg para la tercera.
+4. Mejoras en el Sistema de Habilidades: Las definiciones de clase para habilidades ahora usan class skill en lugar de class ability. Las habilidades admiten parámetros time_cost y cost. Por ejemplo: def a_summon_dragon class skill requirements u_summon_dragon mana_cost 150 cost 10 15 time_cost 60 effect summon 120 2 dragon
+5. Corrección de Errores: Corregido un error donde los edificios cargados en unidades de transporte perdían su atributo meadow.
+6. Nuevas Características de Jugabilidad: Los jugadores ahora pueden habilitar o deshabilitar el modo de auto-represalia para cualquier unidad durante el juego. Añadidos nuevos modos "guardia" y "persecución" además de los modos existentes "ofensivo" y "defensivo".
+7. Actualización del Sistema de Recursos: resource_type ahora es una cadena en lugar de 0 o 1. Por ejemplo: resource_type resource1; gold resource_type resource2; wood
+8. Mejoras en el Sistema de Sonido: Añadido casting: Efectos de sonido para la preparación de habilidades. Reemplazados campos antiguos con otros más específicos: mdg_missed y rdg_missed: Reemplazan missed. launch_matk y launch_ratk: Reemplazan launch_attack. matk_hit y ratk_hit: Reemplazan attack_hit. disappear: Se reproduce cuando las unidades invocadas agotan su tiempo (diferente de death). matk_dodge_vs y ratk_dodge_vs permiten asignar diferentes efectos de sonido de evasión para evadir diferentes unidades. matk_hit_vs y ratk_hit_vs permiten configurar diferentes efectos de sonido para golpear diferentes unidades. Añadida la palabra clave shouts: Cuando el número de unidades en batalla excede 5, se reproducirá un grito de batalla. Por cada 5 unidades adicionales, el volumen aumenta en 1. Ajustado el tiempo de reutilización para alertas de ataque.

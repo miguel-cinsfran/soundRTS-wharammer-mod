@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Funciones Originales del Juego</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    h1, h2, h3 { color: #2c3e50; }
+    ul { list-style-type: disc; margin-left: 40px; }
+    li { margin-bottom: 5px; }
+    .nota { color: #c0392b; font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Funciones Originales del Juego</h1>
+  <p>
+    A continuación se listan las funciones (o palabras clave) definidas en la sección de mods y reglas del juego, junto con una breve descripción de su propósito. Intento omitir aquellas que han sido sustituidas por las nuevas funciones del chino (por ejemplo, <strong>damage_vs</strong> ha sido reemplazada por <strong>mdg_vs</strong> y <strong>rdg_vs</strong>).
+  </p>
+
+  <h2>1. Comandos para Modificar y Reemplazar Archivos</h2>
+  <ul>
+    <li><strong>clear</strong>: Se usa al inicio de un archivo de reglas o estilo para indicar que se debe reemplazar el contenido original en lugar de parchearlo.</li>
+    <li><strong>is_a</strong>: En <em>rules.txt</em>, permite que una entidad herede propiedades de otra (por ejemplo, para que un keep o castillo admita lo que permitiría un ayuntamiento).</li>
+  </ul>
+
+  <h2>2. Definición de Entidades y Límites</h2>
+  <ul>
+    <li><strong>faction</strong>: Palabra clave para definir una facción en <em>rules.txt</em> (ejemplo: <code>def orc_faction</code> seguido de <code>class faction</code>).</li>
+    <li><strong>unit</strong>: Define una unidad o edificio.</li>
+    <li><strong>count_limit</strong>: Establece un límite en la cantidad de unidades de un determinado tipo que se pueden crear o entrenar.</li>
+  </ul>
+
+  <h2>3. Propiedades de las Unidades</h2>
+  <ul>
+    <li><strong>is_ballistic</strong>: Indica que la unidad obtiene un bono de rango si el objetivo está en una altitud inferior.</li>
+    <li><strong>is_teleportable</strong>: Señala que la unidad (o edificio) es susceptible a efectos de teletransporte o recall.</li>
+    <li><strong>hp_regen</strong>: Define la tasa de regeneración de puntos de vida (HP) de una unidad.</li>
+    <li><strong>mana_start</strong>: Establece la cantidad de maná con la que inicia la unidad, en lugar de comenzar con el maná máximo.</li>
+    <li><strong>provides_survival</strong>: Permite que, mientras haya al menos una unidad o edificio con esta propiedad activa, el jugador no pierda en partidas multijugador.</li>
+    <li><strong>storage_bonus</strong>: Otorga bonificaciones de almacenamiento para recursos específicos al propietario de la unidad.</li>
+  </ul>
+
+  <h2>4. Funciones de Daño y Combate</h2>
+  <ul>
+    <li>
+      <strong>damage_vs</strong>: Define un daño específico contra ciertos tipos de unidades, tomando como base el daño predeterminado. 
+      <span class="nota">Esta función ha sido reemplazada en el nuevo sistema por <strong>mdg_vs</strong> (para daño cuerpo a cuerpo) y <strong>rdg_vs</strong> (para daño a distancia).</span>
+    </li>
+  </ul>
+
+  <h2>5. Sistema de Habilidades y Efectos</h2>
+  <ul>
+    <li>
+      <strong>effect</strong>: Se utiliza para definir el efecto asociado a una habilidad. Puede complementarse con parámetros adicionales.
+    </li>
+    <li>
+      <strong>apply_bonus</strong>: Dentro de un efecto, aumenta una propiedad de las unidades afectadas, basándose en una propiedad de bonificación (por ejemplo, <code>damage_bonus</code>).
+    </li>
+    <li>
+      <strong>bonus</strong>: Incrementa directamente una propiedad de las unidades afectadas en un valor fijo.
+    </li>
+    <li>
+      <strong>conversion</strong>: Mueve el objetivo al ejército del lanzador.
+    </li>
+    <li>
+      <strong>raise_dead</strong>: Resucita unidades a partir de cadáveres en una casilla objetivo, siguiendo un orden y con un límite máximo.
+    </li>
+    <li>
+      <strong>recall</strong>: Teletransporta las unidades de la casilla objetivo de vuelta a la casilla del lanzador.
+    </li>
+    <li>
+      <strong>resurrection</strong>: Resucita cadáveres del ejército del lanzador en la casilla objetivo, respetando un límite máximo de unidades.
+    </li>
+    <li>
+      <strong>summon</strong>: Invoca unidades en la casilla objetivo y las añade al ejército del lanzador; estas unidades pueden desaparecer tras un tiempo determinado.
+    </li>
+    <li>
+      <strong>teleportation</strong>: Mueve las unidades del lanzador a una casilla objetivo, similar al efecto de teletransporte.
+    </li>
+  </ul>
+
+  <h2>6. Parámetros de Selección para Efectos</h2>
+  <ul>
+    <li><strong>effect_target</strong>: Define el método de selección del objetivo para un efecto (por ejemplo, <em>self</em>, <em>ask</em> o <em>random</em>).</li>
+    <li><strong>effect_range</strong>: Especifica la distancia máxima entre el lanzador y el objetivo para que un efecto sea aplicable.</li>
+    <li><strong>effect_radius</strong>: Determina el radio de la zona de efecto de una habilidad, centrado en el objetivo.</li>
+  </ul>
+
+  <h2>7. Configuración de la Interfaz y Accesos Rápidos</h2>
+  <ul>
+    <li><strong>style</strong>: Define la apariencia y el comportamiento de la interfaz gráfica, especificado en <em>ui/style.txt</em> y sus versiones localizadas.</li>
+    <li><strong>shortcut</strong>: Permite asignar teclas de acceso rápido a órdenes, construcciones, entrenamientos o habilidades, facilitando la interacción en el juego.</li>
+  </ul>
+</body>
+</html>

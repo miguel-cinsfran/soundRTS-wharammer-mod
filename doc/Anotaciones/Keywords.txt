@@ -1,0 +1,54 @@
+mdg_projectile y rdg_projectile: 0 o 1. Gana alcance adicional si está en terreno elevado.
+mdg_cover_on_terrain y rdg_cover_on_terrain
+mdg_dodge_on_terrain y rdg_dodge_on_terrain - Ganan covertura y esquiva en terrenos concretos.
+mdg - daño cuerpo a cuerpo
+rdg - daño a distancia
+mdg_vs - daño cuerpo a cuerpo contra ciertas unidades.
+rdg_vs - daño a distancia contra ciertas unidades
+mdg_range - alcance cuerpo a cuerpo
+rdg_range - alcance a distancia
+mdg_minimal_range: distancia minima para ataques cuerpo a cuerpo.
+rdg_minimal_range: La misma funcionalidad para ataques a distancia.
+mdg_range_vs: Ajusta el alcance cuerpo a cuerpo (mdg_range) específicamente para ciertas unidades.
+rdg_range_vs: Ajusta el alcance a distancia (rdg_range) específicamente para ciertas unidades.
+rdg_minimal_range_vs: Ajusta el alcance mínimo a distancia (rdg_minimal_range) específicamente para ciertas unidades.
+mdg_targets: Reemplaza los target_types anteriores para ataques cuerpo a cuerpo.
+rdg_targets: Reemplaza los target_types anteriores para ataques a distancia.
+mdg_delay tiempo en impactar ataque cuerpo a cuerpo
+rdg_delay: La misma funcionalidad para ataques a distancia.
+mdg_splash: Reemplaza el campo binario splash con valores ajustables (no solo 0 o 1).
+rdg_splash: La misma funcionalidad para ataques a distancia.
+mdg_radius: Reemplaza el campo único damage_radius para daño de área cuerpo a cuerpo.
+rdg_radius: La misma funcionalidad para daño de área a distancia.
+mdg_splash_decay: Especifica la disminución del daño de área para ataques cuerpo a cuerpo.
+rdg_splash_decay: Especifica la disminución del daño de área para ataques a distancia.
+mdf armadura cuerpo a cuerpo.
+rdf - ARmadura a distancia
+mdf_vs: Ajusta la defensa cuerpo a cuerpo (mdf) específicamente para ciertas unidades.
+rdf_vs: Ajusta la defensa a distancia (rdf) específicamente para ciertas unidades.
+mdg_cd: Reemplaza el campo único de tiempo de reutilización para ataques cuerpo a cuerpo.
+rdg_cd: Lo mismo para ataques a distancia.
+mdg_cd_vs: Ajusta mdg_cd específicamente para ciertas unidades.
+rdg_cd_vs: Ajusta rdg_cd específicamente para ciertas unidades.
+mdg_ready: Especifica el tiempo de preparación de ataque cuerpo a cuerpo.
+rdg_ready: Especifica el tiempo de preparación de ataque a distancia.
+mdg_ready_vs: Ajusta mdg_ready específicamente para ciertas unidades.
+rdg_ready_vs: Ajusta rdg_ready específicamente para ciertas unidades.
+mdg_cover: Especifica tasa de acierto cuerpo a cuerpo.
+rdg_cover: Especifica tasa de acierto a distancia.
+mdg_cover_vs: Ajusta mdg_cover específicamente para ciertas unidades.
+rdg_cover_vs: Ajusta rdg_cover específicamente para ciertas unidades.
+mdg_dodge: Especifica tasa de evasión cuerpo a cuerpo.
+rdg_dodge: Especifica tasa de evasión a distancia.
+mdg_dodge_vs: Ajusta mdg_dodge específicamente para ciertas unidades.
+rdg_dodge_vs: Ajusta rdg_dodge específicamente para ciertas unidades.
+damage_seq mdg 3 (damage 6 3 3) (interval 0.2) - Secuencia de ataques
+allow_units_attack  unidad - allow_units_attack: all - permite atacar desde un vehículo. Por defecto no se puede.
+allow_units_add bonificacion numero - añade bonificaciones por cada unidad cargada. SE pueden especificar varias.
+
+
+
+speed_on_terrain marsh 1.5 ford 1.5
+(no_air - no pueden pasar unidades aéreas
+speed 0.5 1 a1 b1 - Modificador de velocidad en casillas, primer número movimiento tierra, segundo número movimiento aire.
+cover 0 0 a1 b1 - Covertura para unidades terrestres, definida en casillas, tierra. aire

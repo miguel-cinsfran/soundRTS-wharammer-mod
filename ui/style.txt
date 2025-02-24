@@ -1,0 +1,232 @@
+; messages
+
+def messages
+not_enough_resource_0 135 131
+not_enough_resource_1 135 7400
+not_enough_resource_2 135 132
+not_enough_resource_3 135 7401
+not_enough_food 135 133
+not_enough_mana 4252
+not_enough_space 1027
+
+
+; miscellaneous parameters
+
+def parameters
+resource_0_title 131
+resource_1_title 7400
+resource_2_title 132
+resource_3_title 7401
+food_title 133
+recommended_maps jl8 jl7 jl6 jl5
+
+
+; resources
+
+def goldmine
+is_a resource_deposit
+title 81
+color gold
+exhausted 1047
+ground gravel
+
+def woods
+is_a resource_deposit
+title 80
+color forestgreen
+noise repeat 6 1055 1056 1057 1058 9999 9999
+ground leaves
+
+def cantera
+is_a resource_deposit
+title 7404
+exhausted 1047
+ground gravel
+
+def mina_hierro
+is_a resource_deposit
+title 7405
+exhausted 1047
+ground gravel
+
+
+;Construcciones:
+
+def campamento
+is_a building
+title 7406
+color white
+noise repeat 6 campamento
+death campamento_destruido
+shortcut h
+
+def casa_comunal
+is_a campamento
+title 7407
+noise repeat 6 1307
+
+def torreon
+is_a casa_comunal
+title 7408
+noise repeat 6 1308
+
+def torreon_omenaje
+is_a torreon
+title 7409
+noise repeat 6 1308
+
+def granja
+is_a building
+title 83
+color hotpink
+noise repeat 15 1050
+
+def almacen
+is_a building
+title 7410
+
+def silo_grano
+is_a building
+title 7411
+
+def pozo_agua
+is_a building
+title 7412
+
+def pozo_envenenado
+is_a building
+title 7413
+
+def carpinteria
+is_a building
+title 7414
+noise repeat 15 1052
+
+def barracas
+is_a building
+title 7415
+color violetred
+
+def herreria
+is_a building
+title 7416
+noise repeat 15 1300
+
+def caballerizas
+is_a building
+title 7417
+noise repeat 15 1305 1306
+
+def taller
+is_a building
+title 7418
+noise repeat 15 1321
+
+def biblioteca
+is_a building
+title 7419
+noise repeat 15 1319
+
+def iglesia
+is_a building
+title 7420
+
+def empalizada_troncos
+is_a building
+title 7421
+
+def muralla_madera
+is_a building
+title 7422
+
+def muro_piedra
+is_a building
+title 7423
+
+def muralla_almenada
+is_a building
+title 7424
+
+def puerta_troncos
+is_a building
+title 7425
+
+def porton_madera
+is_a building
+title 7426
+
+def porton_aherrojado
+is_a building
+title 7427
+
+def porton_rastrillo
+is_a building
+title 7428
+
+def torre_madera
+is_a building
+title 7429
+noise repeat 6 6111
+
+def torre_madera_arqueros
+is_a building
+title 7430
+noise repeat 6 6112
+launch_attack 1042
+attack_hit 1301
+
+def atalaya
+is_a building
+title 7431
+noise repeat 6 6111
+
+def atalaya_arqueros
+is_a building
+title 7432
+noise repeat 6 6112
+launch_attack 1042
+attack_hit 1301
+
+def astilleros
+is_a building
+title 7433
+
+
+;Unidades:
+
+def campesino
+is_a walking_unit
+title 7440
+color brown
+noise_when_exploiting_goldmine repeat 1.6 1038 ; 1081
+noise_when_exploiting_wood repeat 1.5 1034 1035 1036 1037
+noise_when_exploiting_mina_hierro repeat 1.6 1038 ; 1081
+noise_when_exploiting_cantera repeat 1.6 1038 ; 1081
+noise_when_building repeat 4 1046 1048 1049
+attack_hit 1008
+store_resource_0 1099
+store_resource_1 1098
+store_resource_2 1098
+store_resource_3 1098
+keyboard worker
+shortcut d
+
+def espadero
+is_a walking_unit
+title 7441
+noise if_me repeat 6 1336 else repeat 6 1335
+attack 1031
+color red
+attack_hit 1039 1040 1041
+attack_hit_level_1 1302
+keyboard soldier1
+shortcut r
+
+def espadero_cota
+is_a espadero
+title 7443
+
+def espadero_armadura
+is_a espadero
+title 7442
+

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Keywords: SoundRTS 1.3.8.2 Ultimate Version</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    header, section {
+      background: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .code {
+      font-family: Consolas, monospace;
+      background: #eef;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Documentación de Funciones y palabras clave</h1>
+    <p>Este documento detalla la funcionalidad de cada parámetro o palabra clave relacionado con las modificaciones a la versión 1.3.8.2 Ultimate de SoundRTS.</p>
+  </header>
+
+  <section>
+    <h2>Proyectiles</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_projectile</span> y <span class="code">rdg_projectile</span>:  
+        Los valores posibles son <strong>0</strong> o <strong>1</strong>. Cuando se establece a <strong>1</strong>, se activa el efecto de proyectil, otorgando un alcance adicional si la unidad se encuentra en terreno elevado.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cobertura y Esquiva en Terreno</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_cover_on_terrain</span> y <span class="code">rdg_cover_on_terrain</span>:  
+        Permiten obtener bonificaciones en cobertura al situarse en terrenos específicos.
+      </li>
+      <li>
+        <span class="code">mdg_dodge_on_terrain</span> y <span class="code">rdg_dodge_on_terrain</span>:  
+        Otorgan mejoras en la cobertura y la tasa de esquiva cuando la unidad se encuentra en determinados tipos de terreno.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Daño</h2>
+    <ul>
+      <li>
+        <span class="code">mdg</span>: Indica el daño en ataques cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg</span>: Indica el daño en ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_vs</span>: Especifica el daño cuerpo a cuerpo contra unidades particulares.
+      </li>
+      <li>
+        <span class="code">rdg_vs</span>: Especifica el daño a distancia contra unidades específicas.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Alcance</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_range</span>: Define el alcance para ataques cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_range</span>: Define el alcance para ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_minimal_range</span>: Especifica la distancia mínima necesaria para ejecutar un ataque cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_minimal_range</span>: Especifica la distancia mínima para ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_range_vs</span>: Ajusta el alcance cuerpo a cuerpo (<span class="code">mdg_range</span>) para ciertos tipos de unidades.
+      </li>
+      <li>
+        <span class="code">rdg_range_vs</span>: Ajusta el alcance a distancia (<span class="code">rdg_range</span>) para unidades específicas.
+      </li>
+      <li>
+        <span class="code">rdg_minimal_range_vs</span>: Modifica el alcance mínimo a distancia (<span class="code">rdg_minimal_range</span>) para ciertas unidades.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Objetivos</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_targets</span>: Reemplaza los anteriores <em>target_types</em> para ataques cuerpo a cuerpo, definiendo los objetivos de forma más específica.
+      </li>
+      <li>
+        <span class="code">rdg_targets</span>: Reemplaza los <em>target_types</em> anteriores para ataques a distancia.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Retraso de Impacto</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_delay</span>: Define el tiempo de retardo antes de que el ataque cuerpo a cuerpo impacte.
+      </li>
+      <li>
+        <span class="code">rdg_delay</span>: Define el tiempo de retardo antes del impacto de un ataque a distancia.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Efecto Splash (Daño en Área)</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_splash</span>: Permite utilizar valores ajustables para el efecto splash en ataques cuerpo a cuerpo, en lugar de limitarse a 0 o 1.
+      </li>
+      <li>
+        <span class="code">rdg_splash</span>: Funcionalidad similar para ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_radius</span>: Establece el radio de efectividad del daño en área para ataques cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_radius</span>: Define el radio de daño en área para ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_splash_decay</span>: Especifica cómo disminuye el daño del efecto splash a medida que se aleja del centro del impacto en ataques cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_splash_decay</span>: Establece la disminución del daño splash para ataques a distancia.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Armadura y Defensa</h2>
+    <ul>
+      <li>
+        <span class="code">mdf</span>: Representa la armadura en enfrentamientos cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdf</span>: Representa la defensa o armadura en ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdf_vs</span>: Ajusta la defensa cuerpo a cuerpo contra unidades específicas.
+      </li>
+      <li>
+        <span class="code">rdf_vs</span>: Ajusta la defensa a distancia contra ciertos tipos de unidades.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tiempo de Reutilización (Cooldown)</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_cd</span>: Define el tiempo de reutilización para ataques cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_cd</span>: Define el tiempo de reutilización para ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_cd_vs</span>: Ajusta el tiempo de reutilización para ataques cuerpo a cuerpo contra ciertas unidades.
+      </li>
+      <li>
+        <span class="code">rdg_cd_vs</span>: Ajusta el tiempo de reutilización para ataques a distancia en función de la unidad objetivo.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tiempo de Preparación</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_ready</span>: Especifica el tiempo de preparación previo a un ataque cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_ready</span>: Especifica el tiempo de preparación antes de ejecutar un ataque a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_ready_vs</span>: Permite ajustar el tiempo de preparación de ataques cuerpo a cuerpo para unidades específicas.
+      </li>
+      <li>
+        <span class="code">rdg_ready_vs</span>: Permite ajustar el tiempo de preparación de ataques a distancia en función del tipo de unidad.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tasas de Acierto y Evasión</h2>
+    <ul>
+      <li>
+        <span class="code">mdg_cover</span>: Define la tasa de acierto para ataques cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_cover</span>: Define la tasa de acierto para ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_cover_vs</span>: Ajusta la tasa de acierto en ataques cuerpo a cuerpo contra determinadas unidades.
+      </li>
+      <li>
+        <span class="code">rdg_cover_vs</span>: Ajusta la tasa de acierto en ataques a distancia para ciertos objetivos.
+      </li>
+      <li>
+        <span class="code">mdg_dodge</span>: Establece la tasa de evasión para ataques cuerpo a cuerpo.
+      </li>
+      <li>
+        <span class="code">rdg_dodge</span>: Establece la tasa de evasión para ataques a distancia.
+      </li>
+      <li>
+        <span class="code">mdg_dodge_vs</span>: Modifica la tasa de evasión en ataques cuerpo a cuerpo contra unidades específicas.
+      </li>
+      <li>
+        <span class="code">rdg_dodge_vs</span>: Modifica la tasa de evasión en ataques a distancia para ciertos tipos de unidades.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Secuencia de Daño</h2>
+    <p>
+      <span class="code">damage_seq mdg 3 (damage 6 3 3) (interval 0.2)</span>: Define una secuencia de ataques cuerpo a cuerpo compuesta por tres etapas. Cada etapa aplica un daño específico (6, 3 y 3 respectivamente) con un intervalo de 0.2 segundos entre cada impacto.
+    </p>
+  </section>
+
+  <section>
+    <h2>Permisos y Bonificaciones de Ataque</h2>
+    <ul>
+      <li>
+        <span class="code">allow_units_attack unidad - allow_units_attack: all</span>: Permite que una unidad pueda atacar desde un vehículo, lo cual no es posible por defecto.
+      </li>
+      <li>
+        <span class="code">allow_units_add bonificacion numero</span>: Añade bonificaciones por cada unidad cargada; se pueden especificar varias para ajustar la ventaja según la cantidad.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Modificadores de Velocidad y Cobertura en Terreno</h2>
+    <ul>
+      <li>
+        <span class="code">speed_on_terrain marsh 1.5 ford 1.5</span>: Define multiplicadores de velocidad para terrenos específicos, como <em>marsh</em> y <em>ford</em>, aumentando la velocidad a 1.5 veces la normal.
+      </li>
+      <li>
+        <span class="code">no_air</span>: Indica que las unidades aéreas no pueden transitar por el terreno especificado.
+      </li>
+      <li>
+        <span class="code">speed 0.5 1 a1 b1</span>: Establece modificadores de velocidad en casillas, donde el primer número corresponde al movimiento en tierra y el segundo al movimiento aéreo. Los identificadores <em>a1</em> y <em>b1</em> se utilizan para definir condiciones o tipos de casilla.
+      </li>
+      <li>
+        <span class="code">cover 0 0 a1 b1</span>: Define la cobertura (o protección) para unidades terrestres en casillas, diferenciando entre condiciones de movimiento en tierra y aire.
+      </li>
+    </ul>
+  </section>
+</body>
+</html>

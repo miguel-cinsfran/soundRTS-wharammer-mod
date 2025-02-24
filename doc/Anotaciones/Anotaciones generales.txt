@@ -1,0 +1,77 @@
+Velocidad humano, orco: 1
+Velocidad enano: 0,75
+Velocidad elfo: 1.25
+
+Fuerza humano: 1
+Fuerza orco, enano: 2
+Fuerza elfo, goblin: 0
+Fuerza unidades élite: raza + 1
+
+
+Espadas:
+Daño: 3
+Alcance: 0.1
+
+Lanzas:
+daño 4
+Alcanze: 0.8
+
+Picas:
+daño 4
+alcance 1
+
+ARmas a 2 manos:
+daño 6
+Alcance 0.3
+
+Formula del daño:
+daño de arma mas fuerza de la raza mas bonos si los hubiera
+
+Puntos de vida unidades básicas:
+Humano: 20
+Enano, orco: 25
+Elfo: 15
+
+ARmadura gromril:
+protección 4
+Coste 8 hierro
+
+ARmadura pesada:
+Protección 3.
+Coste: 6 hierro
+
+Armadura ligera:
+Protección: 2
+Coste: 4 hierro
+
+Cota de malla:
+Protección 1
+Coste 2 hierro
+
+Escudo:
+Coste: 2 madera, 1 hierro
+
+
+Armas a 1 mano:
+Daño: 4
+Alcance: 0.1
+Coste: 2 hierro 1 madera
+
+Armas a 2 manos:
+Daño arma a 2 manos: 8
+Alcance: 0.2
+Coldown: 2
+Coste: 4 hierro 1 madera
+
+Arcabuz enano:
+Alcance: 10
+Daño: 6
+Atraviesa armadura hay que ver si se puede.
+Coste: 2 hierro 2 madera
+
+Fórmula para el daño provisional:
+(fuerza unidad + daño arma) / 2
+
+
+Evolución unidades básicas enanos:
+Coste: 5 oro
