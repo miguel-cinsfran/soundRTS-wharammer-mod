@@ -1,3 +1,10 @@
+Herencia:
+is_a footman; hereda todo de footman
+is_a footman(hp_max mdg); hereda solamente los atributos indicados
+is_a footman(mdg mdf) knight(hp_max rdf); hereda atributos indicados de distintas unidades.
+capture_success - Porcentaje de vida al que el edificio es capturado
+target_captured
+
 mdg_projectile y rdg_projectile: 0 o 1. Gana alcance adicional si está en terreno elevado.
 mdg_cover_on_terrain y rdg_cover_on_terrain
 mdg_dodge_on_terrain y rdg_dodge_on_terrain - Ganan covertura y esquiva en terrenos concretos.

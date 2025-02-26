@@ -1,0 +1,261 @@
+clear
+
+def parameters
+nb_of_resource_types 4 ; oro, hierro, madera, piedra
+
+; Definición de depósitos de recursos
+def goldmine
+class deposit
+resource_type oro
+extraction_time 3
+extraction_qty 1
+
+def mina_de_hierro
+class deposit
+resource_type hierro
+extraction_time 5
+extraction_qty 1
+
+def forest
+class deposit
+resource_type madera
+extraction_time 20
+extraction_qty 2
+
+def cantera
+class deposit
+resource_type piedra
+extraction_time 10
+extraction_qty 2
+
+; Ajustes en edificios para almacenar recursos
+def townhall
+class building
+cost 20 10 5 5
+time_cost 120
+hp_max 600
+storable_resource_types 0 1 2 3
+can_train peasant
+
+; -------------------------------
+; SISTEMA DE HERENCIAS PARA EDIFICIOS Y UNIDADES ENANAS
+; -------------------------------
+
+def dwarf_building_base
+class building
+hp_max 500
+armor 3
+
+def dwarf_soldier_base
+class soldier
+hp_max 30
+speed 1.2
+armor 1
+range 1
+cooldown 1.5
+damage 5
+
+def dwarf_elite_base
+is_a dwarf_soldier_base
+hp_max 50
+damage 7
+armor 3
+
+def dwarf_ranged_base
+is_a dwarf_soldier_base
+range 5
+cooldown 2
+damage 6
+
+; -------------------------------
+; EDIFICIOS ENANOS
+; -------------------------------
+
+def dwarf_barracks
+is_a dwarf_building_base
+cost 30 15 10 5
+time_cost 150
+hp_max 750
+can_train dwarf_warrior dwarf_longbeard dwarf_hammerer dwarf_slayers
+
+def dwarf_range
+is_a dwarf_building_base
+cost 25 10 10 5
+time_cost 140
+hp_max 700
+can_train dwarf_thunderer dwarf_crossbowman
+
+def dwarf_smithy
+is_a dwarf_building_base
+cost 40 20 15 10
+time_cost 180
+hp_max 800
+can_research upgrade_steel_weapons upgrade_reinforced_armor
+
+def dwarf_engineer_guild
+is_a dwarf_building_base
+cost 35 20 15 10
+time_cost 160
+hp_max 750
+can_train dwarf_engineer dwarf_gyrocopter
+can_research upgrade_siege_mechanics upgrade_gyrocopter_enhancements
+
+def dwarf_artillery_foundry
+is_a dwarf_building_base
+cost 50 30 20 15
+time_cost 220
+hp_max 900
+can_train dwarf_cannon dwarf_organ_gun dwarf_bolt_thrower dwarf_flame_cannon
+can_research upgrade_artillery_precision upgrade_gunpowder_refinement
+
+def dwarf_wall
+is_a dwarf_building_base
+cost 10 5 5 5
+time_cost 60
+hp_max 1000
+armor 4
+provides_survival 0
+
+def dwarf_gate
+is_a dwarf_wall
+cost 15 8 6 5
+time_cost 80
+hp_max 1200
+can_open 1
+provides_survival 0
+can_research upgrade_gate_reinforcement
+
+; -------------------------------
+; UNIDADES RÚNICAS ENANAS
+; -------------------------------
+
+def dwarf_runepriest
+is_a dwarf_soldier_base
+cost 20 15 0 5
+time_cost 40
+hp_max 45
+armor 3
+damage 5
+mana_max 100
+mana_regen 1
+can_use rune_protection rune_smite
+
+def dwarf_rune_lord
+is_a dwarf_elite_base
+cost 60 35 0 20
+time_cost 80
+hp_max 90
+armor 5
+damage 12
+mana_max 200
+mana_regen 2
+effect aura_rune_strength
+effect aura_rune_resilience
+effect aura_rune_protection
+can_use rune_protection rune_smite rune_aura
+
+def dwarf_rune_monolith
+class soldier
+cost 50 25 15 10
+time_cost 200
+hp_max 850
+armor 5
+speed 1
+airground_type ground
+effect aura_rune_strength
+effect aura_rune_resilience
+effect aura_rune_protection
+can_use rune_protection rune_smite rune_aura
+
+; -------------------------------
+; HABILIDADES Y AURAS RÚNICAS
+; -------------------------------
+
+def rune_protection
+class ability
+mana_cost 50
+effect bonus armor 2
+effect duration 10
+effect_range 4
+
+def rune_smite
+class ability
+mana_cost 60
+effect bonus damage 3
+effect duration 8
+effect_range 4
+
+def rune_aura
+class ability
+mana_cost 75
+effect morale_high
+effect bonus cooldown -0.2
+effect bonus speed 0.2
+effect duration 15
+effect_range 5
+
+def aura_rune_strength
+class effect
+effect bonus damage 2
+effect_range 5
+
+def aura_rune_resilience
+class effect
+effect bonus hp_max 50
+effect bonus armor 1
+effect_range 5
+
+def aura_rune_protection
+class effect
+effect bonus morale 1
+effect_range 5
+
+; -------------------------------
+; MEJORAS ENANAS
+; -------------------------------
+
+def upgrade_steel_weapons
+class upgrade
+cost 20 15 0 5
+time_cost 90
+effect bonus damage 1
+
+def upgrade_reinforced_armor
+class upgrade
+cost 25 20 0 10
+time_cost 100
+effect bonus armor 1
+
+def upgrade_artillery_precision
+class upgrade
+cost 35 20 0 10
+time_cost 100
+effect bonus damage 2
+effect bonus range 1
+
+def upgrade_siege_mechanics
+class upgrade
+cost 30 20 0 15
+time_cost 130
+effect bonus damage 3
+effect bonus armor 1
+
+def upgrade_gunpowder_refinement
+class upgrade
+cost 40 25 0 10
+time_cost 120
+effect bonus damage 3
+effect bonus splash 1
+
+def upgrade_gyrocopter_enhancements
+class upgrade
+cost 35 20 0 15
+time_cost 110
+effect bonus speed 0.5
+effect bonus sight_range 1
+
+def upgrade_gate_reinforcement
+class upgrade
+cost 30 15 0 10
+time_cost 100
+effect bonus hp_max 300

@@ -11,21 +11,27 @@ Fuerza unidades élite: raza + 1
 Espadas:
 Daño: 3
 Alcance: 0.1
+Coldown: 1
+Arma a 1 mano
 
 Lanzas:
 daño 4
 Alcanze: 0.8
+Arma a 1 mano
 
 Picas:
 daño 4
-alcance 1
+alcance 1.2
+Arma a 2 manos
 
-ARmas a 2 manos:
+Armas a 2 manos tipo hachas o martillos:
 daño 6
-Alcance 0.3
+Alcance 0.4
 
 Formula del daño:
-daño de arma mas fuerza de la raza mas bonos si los hubiera
+Armas de 1 mano: daño de arma mas fuerza de unidad mas bonos si los hubiera
+Armas a 2 manos: daño del arma + fuerza de la unidad * 2 + bonus
+
 
 Puntos de vida unidades básicas:
 Humano: 20
@@ -68,10 +74,6 @@ Alcance: 10
 Daño: 6
 Atraviesa armadura hay que ver si se puede.
 Coste: 2 hierro 2 madera
-
-Fórmula para el daño provisional:
-(fuerza unidad + daño arma) / 2
-
 
 Evolución unidades básicas enanos:
 Coste: 5 oro

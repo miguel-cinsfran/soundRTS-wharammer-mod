@@ -66,9 +66,67 @@ efect bonus mdf 1 rdf 2
 mdg_cover 0.2
 rdg_cover 0.2
 
+def arma_1mano
+mdg 3
+mdg_range 0.1
+mdg_cd 0.5
+
+def arma_2mano
+mdg 6
+mdg_range 0.3
+mdg_cd 1
+mdg_ready 0.1
+
+def lanza
+mdg 4
+mdg_range 1
+mdg_vs infanteria_ligera infanteria_pesada exploradores 6
+mdg_cd 1.3
+mdg_cd_vs infanteria_ligera infanteria_pesada 0.5
+mdg_ready 0.2
+mdg_minimal_range 0.3
+
+def pica
+mdg 5
+mdg_vs caballeria_ligera caballeria_pesada 10
+mdg_range 1.3
+mdg_cd 1.3
+mdg_cd_vs caballeria_ligera caballeria_pesada 0.5
+mdg_ready 0.2
+mdg_minimal_range 0.5
+
+def arco_largo
+rdg_projectile 1
+rdg 6
+rdg_range 12
+rdg_minimal_range 3
+rdg_delay 0.2
+rdg_cd 1
+rdg_targets ground air water
+
+def arco_corto
+rdg_projectile 1
+rdg 3
+rdg_range 6
+rdg_minimal_range 1
+rdg_delay 0.1
+rdg_cd 0.5
+rdg_targets ground air water
+
+def ballesta
+rdg_projectile 1
+rdg 8
+rdg_range 10
+rdg_minimal_range 1
+rdg_delay 0.1
+rdg_cd 1.5
+rdg_targets ground air water
 
 
 ;Definiciones de unidades generales:
+
+Def exploradores
+class soldier
 
 def infanteria_ligera
 class soldier
@@ -102,13 +160,11 @@ sight_range 12
 food_cost 1
 
 def infanteria_ligera_enana
-is_a infanteria_ligera
-is_a enano
+is_a infanteria_ligera enano
 speed_on_terrain marsh 0.25 snow 0.5 dense_forest 0.5
 
 def infanteria_pesada_enana
-is_a infanteria_pesada
-is_a enano
+is_a infanteria_pesada enano
 speed_on_terrain marsh 0 snow 0.2 dense_forest 0.25 ford 0.5
 
 
@@ -130,7 +186,7 @@ can_build
 can_use 
 
 def guerrero_clan
-is_a infanteria_pesada_enana
+is_a infanteria_pesada_enana espada
 cost 8 8 1 0
 time_cost 10
 range 0.1
@@ -141,14 +197,12 @@ can_use escudo_1
 can_upgrade_to barbalarga
 
 def barbalarga
-is_a infanteria_pesada_enana
+is_a infanteria_pesada_enana arma_2mano
 cost 6 4 1 0
 time_cost 10
-range 0.1
-cooldown 2
 damage 6
 requirements 
-can_use escudo_1
+can_use
 
 ;montaraces
 def montaraz_enano_1
