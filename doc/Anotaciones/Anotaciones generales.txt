@@ -6,6 +6,31 @@ Fuerza humano: 1
 Fuerza orco, enano: 2
 Fuerza elfo, goblin: 0
 Fuerza unidades élite: raza + 1
+Fuerza unidades especialmente dopadas: raza +2
+
+Covertura cuerpo a cuerpo:
+Guerreros de habilidad normal: orcos y humanos: 10%
+Buenos luchadores como enanos 15%
+Luchadores cutres como goblins o skavens: 5%
+Elfos: 5%, esquivan mas de lo que se protegen
+Escudos: 5% mas de covertura por nivel de investigación
+Máquinas de guerra: +20% La dotación utiliza la máquina para protegerse y defenderse
+
+Covertura contra proyectiles:
+Criaturas de tamaño normal como humanos o elfos: 10%
+Criaturas pequeñas como enanos, goblins o skavens: 15%
+Criaturas grandes como orcos u hombres bestia: 5%
+Monstruos enormes o criaturas voladoras: 0
+Máquinas de guerra: +30% la dotación las utiliza como protección
+Escudos: +5% por nivel
+
+Evasión cuerpo a cuerpo:
+Criaturas lentas como enanos y orcos: 5%
+Criaturas normales como humanos: 10%
+Criaturas ágiles como goblins, skavens o elfos: 15%
+
+Evasión contra proyectiles:
+Será alta en monstruos grandes dependiendo que les dispare.
 
 
 Espadas:

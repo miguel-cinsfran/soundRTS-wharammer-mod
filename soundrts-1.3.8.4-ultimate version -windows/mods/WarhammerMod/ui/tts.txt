@@ -1,0 +1,17 @@
+; coding: utf-8
+
+;Recursos:
+
+10001 mina de oro
+10002 oro
+10003 mina de hierro
+10004 hierro
+10005 bosque
+10006 madera
+10007 cantera
+10008 piedra
+
+
+
+
+

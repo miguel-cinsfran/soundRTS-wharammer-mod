@@ -1,0 +1,2 @@
+def peasant
+test 1

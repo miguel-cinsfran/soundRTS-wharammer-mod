@@ -1,10 +1,18 @@
+is_production 1 - Indica que un edificio puede producir recursos. 1 si, 0 no
+production_type resource1 - Recurso que produce el edificio. Solo 1 tipo por edificio.
+production_cost 2 0 - Coste de producir el recurso.
+production_time 300 - Tiempo para producir el recurso
+production_qty 100 
+can_start_produce - La opción de iniciar la producción aparece en el menú
+
 Herencia:
 is_a footman; hereda todo de footman
 is_a footman(hp_max mdg); hereda solamente los atributos indicados
 is_a footman(mdg mdf) knight(hp_max rdf); hereda atributos indicados de distintas unidades.
-capture_success - Porcentaje de vida al que el edificio es capturado
-target_captured
-
+is_a footman(apart hp_max); hereda todo menos HPMax
+capture_success y target_captured - Cosas de style.txt que habra que investigar.
+is_a footman knight archer; hereda todo de distintas unidades
+capture_hp_threshold 30   el edificio es capturado cuando la vida baja por debajo del 30%
 mdg_projectile y rdg_projectile: 0 o 1. Gana alcance adicional si está en terreno elevado.
 mdg_cover_on_terrain y rdg_cover_on_terrain
 mdg_dodge_on_terrain y rdg_dodge_on_terrain - Ganan covertura y esquiva en terrenos concretos.

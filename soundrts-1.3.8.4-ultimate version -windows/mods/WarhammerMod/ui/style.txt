@@ -1,0 +1,85 @@
+;messages
+
+def messages
+not_enough_resource_1 135 10002
+not_enough_resource_2 135 10004
+not_enough_resource_3 135 10006
+not_enough_resource_4 135 10008
+
+def parameters
+resource_1_title 10001
+resource_2_title 10003
+resource_3_title 10005
+resource_4_title 10007
+
+
+;Depósitos de recursos
+
+def goldmine
+is_a resource_deposit
+title 81
+color gold
+exhausted 1047
+ground gravel
+
+def wood
+is_a resource_deposit
+title 80
+color forestgreen
+noise repeat 6 1055 1056 1057 1058 9999 9999
+ground leaves
+
+def mina_hierro
+is_a resource_deposit
+title 4365
+color gold
+exhausted 1047
+ground gravel
+
+def cantera
+is_a resource_deposit
+title 4366
+color gold
+ground gravel
+
+
+;Definición de Facciones:
+
+def enanos
+title 
+
+def enano
+
+def orcos
+title 
+
+def orco
+title
+
+
+;Definición de equipo general:
+
+def cota_malla
+
+def armadura_ligera
+
+def armadura_pesada
+
+def escudo_1
+
+def escudo_2
+
+def arma_1mano
+
+def arma_2mano
+
+def lanza
+
+def pica
+
+def arco_largo
+
+def arco_corto
+
+def ballesta
+
