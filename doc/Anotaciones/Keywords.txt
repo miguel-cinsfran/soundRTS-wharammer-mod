@@ -71,3 +71,5 @@ launch_matk o launch_ratk: - Sonido para melé o rango cuando se lanza el ataque
 matk_hit o ratk_hit: ataque melée o rango cuando impacta.
 disappear: Cuando unidades invocadas desaparecen. No cuando mueren.
 capture_success y target_captured - Cuando te conquistan un edificio, desconozco la diferencia.
+matk_dodge_vs and ratk_dodge_vs allow assigning different dodge sound effects for evading different units.
+matk_hit_vs and ratk_hit_vs allow configuring different sound effects for hitting different units.
