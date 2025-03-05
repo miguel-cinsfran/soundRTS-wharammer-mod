@@ -10,7 +10,6 @@ is_a footman; hereda todo de footman
 is_a footman(hp_max mdg); hereda solamente los atributos indicados
 is_a footman(mdg mdf) knight(hp_max rdf); hereda atributos indicados de distintas unidades.
 is_a footman(apart hp_max); hereda todo menos HPMax
-capture_success y target_captured - Cosas de style.txt que habra que investigar.
 is_a footman knight archer; hereda todo de distintas unidades
 capture_hp_threshold 30   el edificio es capturado cuando la vida baja por debajo del 30%
 mdg_projectile y rdg_projectile: 0 o 1. Gana alcance adicional si está en terreno elevado.
@@ -61,9 +60,14 @@ damage_seq mdg 3 (damage 6 3 3) (interval 0.2) - Secuencia de ataques
 allow_units_attack  unidad - allow_units_attack: all - permite atacar desde un vehículo. Por defecto no se puede.
 allow_units_add bonificacion numero - añade bonificaciones por cada unidad cargada. SE pueden especificar varias.
 
-
-
 speed_on_terrain marsh 1.5 ford 1.5
 (no_air - no pueden pasar unidades aéreas
 speed 0.5 1 a1 b1 - Modificador de velocidad en casillas, primer número movimiento tierra, segundo número movimiento aire.
 cover 0 0 a1 b1 - Covertura para unidades terrestres, definida en casillas, tierra. aire
+
+Para el style.txt:
+mdg_missed o rdg_missed - Sonido para ataque melée o rango cuando falla
+launch_matk o launch_ratk: - Sonido para melé o rango cuando se lanza el ataque.
+matk_hit o ratk_hit: ataque melée o rango cuando impacta.
+disappear: Cuando unidades invocadas desaparecen. No cuando mueren.
+capture_success y target_captured - Cuando te conquistan un edificio, desconozco la diferencia.

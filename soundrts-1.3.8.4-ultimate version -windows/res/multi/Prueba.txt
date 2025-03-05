@@ -1,0 +1,32 @@
+title 11000
+objective 11001
+
+square_width 14
+nb_columns 3
+nb_lines 3
+
+nb_players_min 1
+nb_players_max 2
+starting_squares a1 c3
+starting_units campamento_enano 1 guerrero_clan
+computer_only 0 0 0 0 b2 pelele_orco
+
+starting_resources 1000 1000 1000 1000
+global_food_limit 200
+
+
+nb_meadows_by_square 0
+; 4 meadows
+additional_meadows a1 a2 a3 b1 b2 b3 c1 c2 c3
+additional_meadows a1 a2 a3 b1 b2 b3 c1 c2 c3
+additional_meadows a1 a2 a3 b1 b2 b3 c1 c2 c3
+additional_meadows a1 a2 a3 b1 b2 b3 c1 c2 c3
+
+terrain _meadows a1 a2 a3 b1 b3 c1 c2 c3
+high_grounds 
+water 
+ground 
+no_air 
+
+west_east path a1 a2 a3 b1 b2 b3
+south_north path a1 a2 b1 b2 c1 c2

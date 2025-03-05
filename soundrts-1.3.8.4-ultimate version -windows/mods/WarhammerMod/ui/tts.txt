@@ -1,7 +1,4 @@
 ; coding: utf-8
-
-;Recursos:
-
 10001 mina de oro
 10002 oro
 10003 mina de hierro
@@ -11,7 +8,25 @@
 10007 cantera
 10008 piedra
 
+10020 enanos
+10021 orcos
+10022 imperio
+10023 altos elfos
+10024 elfos silvanos
+10025 bretonia
+10026 skavens
 
 
+10000 guerrero del clan
+
+
+
+
+
+ 10200 campamento orco
+10201 pelele gigante
+11000 mapa para pruebas
+11001 hacer el idiota
+11150 campamento enano
 
 
