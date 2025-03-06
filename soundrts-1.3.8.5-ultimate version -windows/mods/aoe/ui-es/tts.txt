@@ -67,7 +67,7 @@
 12864 Tienda de campaña Hakemu
 12865 Tienda de campaña del Pasha
 12866 Rancho turco
-12867 Taller de cuero
+12867 Curtiduría
 12868 Casa del chamán
 12869 Pajarera
 12870 Pastor turco
@@ -169,7 +169,7 @@
 12966 Prueba divina
 12967 Bendición divina
 12968 Misericordia divina
-12969 Balista bizantina
+12969 Catapulta bizantina
 12970 Orden: desplegar mercenarios
 12971 Caballería ligera indígena
 12972 Caballería arquera mercenaria turca
@@ -194,7 +194,7 @@
 12991 Caballería ligera de Shatuo
 12992 Arquero montado de Shatuo
 12993 Caballería pesada de Nanzhao
-12994 Arquero Xí
+12994 Infantería Acorazada Bizantina de espada larga
 12995 Muralla
 12996 Muralla gigante
 12997 Puerta de la ciudad
@@ -206,8 +206,8 @@
 13003 Ballestero bizantino
 13004 Ballestero de élite bizantino
 13005 Carro lanzapiedras mediano
-13006 balista mediana
-13007 balista pesada
+13006 Catapulta mediana
+13007 Catapulta Enorme
 13008 Ariete gigante
 13009 Jabalinero Tang
 13010 Jabalinero de élite Tang
