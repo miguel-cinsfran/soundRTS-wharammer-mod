@@ -1,0 +1,37 @@
+8500 Los turcos están a punto de emprender una gran ofensiva en la frontera, y en el Imperio Tang se respira un ambiente de inminente guerra.
+8501 El mariscal te ha asignado a la guarnición para reforzar nuestras tropas y preparar los caballos, ya que la batalla se acerca. Nota: Evita alejarte de la frontera, salvo en casos de extrema necesidad.
+8502 ¡Bien hecho!
+
+8504 La vanguardia del ejército turco está a punto de aparecer, por lo que debemos lanzarnos de inmediato para asestarles un golpe frontal que rompa su ímpetu. Además, dado que disponemos de una cantidad limitada de caballería, es fundamental emplearla en el lugar adecuado.
+8505 Repulsa a la vanguardia turca.
+8506 ¿Lo notas? El terreno en b4 es elevado; por ello, si colocas a los arqueros allí, podrán disparar a mayor alcance. Así, a menos que el enemigo sufra grandes bajas, no tendrá posibilidad de avanzar. Además, puesto que este punto es la entrada y salida de la ciudad, mientras se mantenga controlado, el enemigo no podrá penetrarla.
+8507 Estos piqueros son una táctica de provocación del enemigo, ya que contrarrestan eficazmente a la caballería. Por ello, cuando se enfrenten en igual número, nunca debes utilizar la caballería contra ellos; en su lugar, opta por los infanteros pesados armados con sable de Tang o por arqueros de bajo costo.
+8508 En lo que respecta al combate contra la caballería, nuestros infanteros pesados armados con sable de Tang son inigualables.
+8509 Construir una aldea
+8510 Construir un campo de entrenamiento
+8511 Capítulo 1: Preparativos previos a la guerra
+8512 Capítulo 2: Afilar las armas y adiestrar a los caballos
+8530 Una vez que domines la construcción básica de edificios, deberás aprender a mejorar tu base, reclutar tropas y ejecutar otras operaciones.
+8531 Tutorial para principiantes
+8532 Mejora la oficina del condado a la oficina del gobernador y recluta 20 piqueros, 20 arqueros, 20 infanteros pesados armados con sable, 20 unidades de caballería ligera, 5 carros de marcha, 5 vehículos de asedio, 5 médicos taoístas y 5 unidades de caballería de armadura arcana.
+8533 Mejora la oficina del condado a la oficina del gobernador
+8534 Recluta 20 piqueros, 20 arqueros, 20 infanteros pesados armados con sable y 20 unidades de caballería ligera
+8535 Recluta 5 carros de marcha y 5 vehículos de asedio
+8536 Recluta 5 médicos taoístas y 5 unidades de caballería de armadura arcana
+8537 Muy bien hecho. Una vez que dispongas del campo de entrenamiento, podrás elevar el nivel de tu base al 2.
+8538 Ya has cumplido los requisitos para elevar tu base al 3.
+8539 Capítulo 3: Técnicas de combate
+8540 Ahora que cuentas con tropas suficientes, es el momento de familiarizarte con las tácticas de combate. El juego incorpora un sistema de contrarresto entre unidades: en términos generales, los piqueros y la infantería pesada vencen a la caballería, ésta contrarresta a las unidades de largo alcance, que a su vez superan a los piqueros y a la infantería pesada, mientras que los equipos de asedio dominan a las unidades de largo alcance. Además, existen relaciones más específicas que deberás descubrir conforme avances.
+8541 Los turcos del norte han sido siempre una amenaza latente para nuestro Tang, aprovechándose de su ventaja en caballería para atacar de manera fulminante, forzando a nuestras tropas a estar en constante retirada. Los exploradores han detectado un considerable ejército turco merodeando cerca de la frontera, con un propósito aún desconocido. Tras deliberarlo, hemos decidido arriesgarnos y salir de la ciudad para infiltrarnos en su campamento.
+8542 Elimina a todos los enemigos
+8543 Capítulo 4: Ataque frontal
+8544 A partir de este capítulo, entrarás en la verdadera fase de combate, en la que el enemigo lanzará una serie de ofensivas continuas, poniendo a prueba tu capacidad integral.
+8545 Capítulo 5: La batalla final
+8546 La fuerza principal de los turcos ha avanzado de manera contundente, y parece que una batalla encarnizada está por estallar, la cual sin duda resultará sumamente trágica.
+8549 Defiende la ciudad
+8551 Informe... Acabamos de recibir noticias: el gran general, preocupado por la insuficiencia de tropas para defender la ciudad, ha decidido enviarnos refuerzos. Se espera que el general se asegure de que la ciudad no caiga.
+8552 ¡Mira, han llegado los refuerzos, en b5!
+8553 Esta fue la última oleada de apoyo que nos proporcionó el gran general; debido a la preocupación por las bajas, estos refuerzos ingresaron a la ciudad por la puerta sur, en a3 y c3.
+8554 La batalla ha alcanzado un nivel que no habías anticipado; actualmente, los soldados se encuentran exhaustos y la ciudad sufre una grave escasez de provisiones, mientras que la ofensiva turca no muestra señales de menguar. Ante ello, comienzas a sentirte inquieto y decides convocar a los oficiales para debatir posibles contramedidas.
+8555 Tras intensas deliberaciones, se concluyó unánimemente que no era viable depender únicamente de la defensa de las puertas de la ciudad, sino que era necesario planificar también para el eventual rompimiento de estas. Así, después de reiteradas discusiones y análisis, se ideó la táctica de aprovechar la compleja geografía del interior de la ciudad para contener al enemigo, optando por abandonar las puertas y replegarse al interior si fuera necesario.
+8556 Cuando ya creíste que habíais agotado todas las opciones, de repente observaste que el campamento principal turco comenzaba a retirarse lentamente, acompañado del sonido de campanas de guerra. De inmediato, el ejército turco en la base de Zheng Yu, al percibir estos sonidos, detuvo su formación y se retiró rápidamente del campo de batalla. Esto no significa que os sintierais indefensos; al contrario, tras sufrir enormes bajas sin lograr tomar la ciudad, la moral del ejército turco se desplomó, volviéndoles inviable continuar la lucha. Además, temiendo un posible contraataque de vuestra fuerza principal, decidieron abandonar la ciudad y buscar otra ruta.
