@@ -1,0 +1,18 @@
+training
+Prueba test ai_easy
+1.3.8.1
+WarhammerMod
+15-80ac258ff61cce427d96fcce4fc05f19
+b99782b3e82a42ff1f7022e7475c162b4ad91c6f51192cc5b4ab8c9c71b25400
+test ai_easy
+1 2
+random_faction random_faction
+3826
+5100 0 control 73-82
+5100 0 order 0 0 default 5
+13200 0 control 73
+13200 0 order 0 0 default 6
+94500 0 control 73-82
+94500 0 order 0 0 default 6
+104700 0 order 0 1 default 10
+146100 0 cmd victory

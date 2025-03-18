@@ -1,7 +1,0 @@
-﻿; coding: utf-8
-
-7000 pig farm
-7001 barracks
-7002 great hall
-7003 peon
-7004 grunt

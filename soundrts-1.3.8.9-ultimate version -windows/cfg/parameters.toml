@@ -1,0 +1,98 @@
+tts_digit_coefficient = 3
+flattening_factor = 2.0
+fog_of_war_factor = 0.5
+use_hrtf = true
+hrtf_intensity = 1.0
+hrtf_swap_channels = false
+hrtf_angle_offset = 180.0
+use_reverb = true
+reverb_room_size = 0.55
+reverb_dampening = 0.51
+reverb_wet_level = 0.5
+reverb_dry_level = 0.51
+use_headphone_optimization = true
+headphone_crossfeed = 0.2
+headphone_widening = 0.4
+animation_delay = 0.1
+render_nearby_land = 1
+render_nearby_objects = 1
+silence_previous_square = 1
+play_movement_sound = 1
+observer_reactivity = 1000
+hrtf_available = true
+hrtf_width_factor = 1.6
+hrtf_volume_scale = 1.0
+reverb_decay = 0.65
+reverb_diffusion = 0.7
+reverb_distance_factor = 0.2
+reverb_damping = 0.4
+reverb_early_reflections = 0.3
+reverb_late_reflections = 0.2
+headphone_dynamic_enhancer = 0.7
+headphone_front_boost = 0.5
+headphone_back_attenuation = 0.25
+headphone_depth_effect = 1.0
+headphone_spatial_positioning = 1.0
+headphone_haas_effect = 0.3
+headphone_haas_delay = 0.2
+headphone_freq_boost = 0.6
+headphone_super_stereo = 0.8
+headphone_ultra_wide = true
+audio_debug_mode = false
+hrtf_south_angle_offset = 0.0
+sound_balance_method = "none"
+enable_sound_balance = true
+debug_sound_balance = false
+
+[default_volume]
+res = 1.0
+soundpack = 0.8
+
+[volume]
+1000 = 0.5
+
+[packages]
+base = "res"
+additional = [
+    "",
+    "user",
+    "user/downloaded",
+]
+hrtf_volume_scale = 0.8
+hrtf_adjacent_volume = 2.7755575615628914e-17
+hrtf_distant_volume = 0.40000000000000013
+hrtf_width_factor = 1.6
+hrtf_front_back_balance = 0.0
+hrtf_elevation_factor = 1.0
+hrtf_adjacent_threshold = 5.0
+
+[audio]
+use_hrtf = true
+hrtf_intensity = 1.0
+hrtf_angle_offset = 0.0
+hrtf_width_factor = 1.6
+hrtf_volume_scale = 1.0
+hrtf_swap_channels = false
+use_reverb = true
+reverb_dry_level = 0.5
+reverb_wet_level = 0.5
+reverb_decay = 0.65
+reverb_diffusion = 0.7
+reverb_distance_factor = 0.2
+reverb_room_size = 0.54
+reverb_damping = 0.4
+reverb_early_reflections = 0.3
+reverb_late_reflections = 0.2
+use_headphone_optimization = true
+headphone_widening = 0.4
+headphone_crossfeed = 0.2
+headphone_dynamic_enhancer = 0.7
+headphone_front_boost = 0.5
+headphone_back_attenuation = 0.25
+headphone_depth_effect = 1.0
+headphone_spatial_positioning = 1.0
+headphone_haas_effect = 0.3
+headphone_haas_delay = 0.2
+headphone_freq_boost = 0.6
+headphone_super_stereo = 0.8
+audio_debug_mode = false

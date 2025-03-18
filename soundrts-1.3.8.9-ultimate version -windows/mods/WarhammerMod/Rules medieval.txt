@@ -1,0 +1,361 @@
+
+;Construcciones:
+
+def campamento
+class building
+cost 0 0 10 0
+food_provided 2
+heal_level 1
+hp_max 50
+time_cost 20
+storable_resource_types 0 2
+can_train campesino
+can_upgrade_to casa_comunal
+decai 15
+
+def casa_comunal
+class building
+is_a campamento
+cost 0 0 50 0
+storable_resource_types 0
+time_cost 100 ; this is the total cost
+food_provided 4
+hp_max 2000
+can_upgrade_to torreon
+life_span 0
+
+def torreon
+class building
+is_a casa_comunal
+cost 40 30 200 100 ; this is the total cost
+time_cost 400
+hp_max 8000
+food_provided 6
+storable_resource_types 0
+can_upgrade_to torreon_omenaje
+can_train caballero_espada caballero_espada_cota caballero_hacha caballero_hacha_cota caballero_lanza caballero_lanza_cota
+
+def torreon_omenaje
+class building
+is_a torreon
+cost 160 120 400 400 ; this is the total cost
+time_cost 1200
+hp_max 18000
+food_provided 8
+storable_resource_types 0
+storage_bonus 1 0 0 0
+can_train caballero_espada_armadura caballero_lanza_armadura caballero_hacha_armadura
+
+def granja
+class building
+cost 10 15 50 20
+food_provided 20
+hp_max 2000
+time_cost 200
+
+def almacen
+class building
+cost 10 10 40 20
+hp_max 2000
+time_cost 200
+storable_resource_types 1 2 3
+requirements casa_comunal
+
+def silo_grano
+class building
+cost 20 30 50 100
+food_cost 20
+food_provided 60
+hp_max 5000
+time_cost 500
+requirements torreon_omenaje
+
+def pozo_agua
+class building
+cost 100 20 40 100
+hp_max 1000
+time_cost 400
+heal_level 3
+requirements torreon
+
+def pozo_envenenado
+class building
+cost 100 20 40 100
+hp_max 100
+time_cost 400
+harm_level 3
+harm_target_type healable
+
+def carpinteria
+class building
+cost 5 20 40 20
+hp_max 2000
+time_cost 100
+requirements casa_comunal
+storable_resource_types 2
+can_research arcos_cortos arcos_largos escudos lanzas picas
+
+def barracas
+class building
+cost 5 10 40 20
+hp_max 2000
+time_cost 100
+requirements casa_comunal
+can_train espadero espadero_cota espadero_armadura hachero hachero_cota hachero_armadura lancero lancero_cota lancero_armadura piquero piquero_cota piquero_armadura arquero_corto arquero_largo ballestero arquero_montado
+
+def herreria
+class building
+cost 10 50 20 50
+hp_max 3000
+time_cost 300
+requirements casa_comunal
+can_research hachas cotas armaduras 
+
+def caballerizas
+class building
+cost 10 15 40 10
+hp_max 2000
+time_cost 200
+requirements torreon
+
+def taller
+class building
+cost 10 30 40 40
+hp_max 3000
+time_cost 300
+requirements torreon
+can_research ballestas 
+can_train escorpion catapulta ariete
+
+def biblioteca
+class building
+cost 200 0 100 100
+hp_max 3000
+time_cost 300
+requirements torreon_omenaje
+can_train espia
+can_research acero forraje alimentacion
+
+def iglesia
+class building
+cost 300 10 100 200
+hp_max 3000
+time_cost 300
+requirements torreon_omenaje
+can_train sacerdote
+can_research 
+
+def empalizada_troncos
+class building
+cost 0 10 60 0
+hp_max 5000
+time_cost 250
+is_buildable_on_exits_only 1
+can_upgrade_to muralla_madera
+
+def muralla_madera
+class building
+cost 0 20 120 0
+hp_max 10000
+time_cost 500
+is_buildable_on_exits_only 1
+requirements casa_comunal
+
+def puerta_troncos
+class building
+cost  0 20 40 0
+hp_max 3500
+time_cost 175
+is_buildable_on_exits_only 1
+is_a_gate 1
+provides_survival 0
+can_upgrade_to porton_madera
+
+def porton_madera
+class building
+cost 0 40 80 0
+hp_max 7500
+time_cost 375
+is_buildable_on_exits_only 1
+is_a_gate 1
+provides_survival 0
+requirements casa_comunal
+
+def muro_piedra
+class building
+cost 0 10 10 150
+hp_max 12500
+time_cost 600
+is_buildable_on_exits_only 1
+can_upgrade_to muralla_almenada
+requirements torreon
+
+def muralla_almenada
+class building
+cost 0 20 20 300
+hp_max 20000
+time_cost 1000
+is_buildable_on_exits_only 1
+requirements torreon_omenaje
+
+def porton_aherrojado
+class building
+cost  0 100 40 0
+hp_max 7000
+time_cost 350
+is_buildable_on_exits_only 1
+is_a_gate 1
+provides_survival 0
+can_upgrade_to porton_rastrillo
+requirements torreon
+
+def porton_rastrillo
+class building
+cost 0 200 80 0
+hp_max 12000
+time_cost 600
+is_buildable_on_exits_only 1
+is_a_gate 1
+provides_survival 0
+can_use agua_hirviendo
+requirements torreon_omenaje
+
+def torre_madera
+class building
+cost 0 20 150 10
+hp_max 5000
+time_cost 250
+bonus_height 1
+provides_survival 0
+sight_range 25
+requirements casa_comunal
+can_upgrade_to torre_madera_arqueros
+
+def torre_madera_arqueros
+class building
+is_a torre_madera
+cost 0 40 200 10
+hp_max 5000
+time_cost 250
+range 16
+minimal_range 4
+cooldown 3
+damage 6
+target_types healable
+can_use 
+requirements arco_largo
+
+def atalaya
+class building
+cost 10 10 20 100
+hp_max 10000
+time_cost 500
+bonus_height 2
+provides_survival 0
+sight_range 30
+can_upgrade_to atalaya_arqueros atalaya_catapultas atalaya_escorpiones
+requirements torreon
+
+def atalaya_arqueros
+class building
+is_a atalaya
+cost 20 20 30 100
+hp_max 5000
+time_cost 250
+range
+sight_range
+is_ballistic 1
+cooldown 
+damage 
+target_types ground air
+armor 
+can_use 
+
+def astilleros
+class building
+cost 10 10 20 40
+hp_max 3000
+time_cost 300
+is_buildable_near_water_only 1
+can_train bote almadia
+
+
+;unidades:
+
+def campesino
+class worker
+cost 4 0 0 0
+food_cost 1
+time_cost 8
+hp_max 8
+speed 1
+range 0.1
+sight_range 20
+cooldown 2
+damage 1
+can_build granja almacen barracas carpinteria herreria caballerizas taller biblioteca iglesia campamento silo_grano pozo_agua empalizada_troncos puerta_troncos muro_piedra porton_aherrojado torre_madera atalaya astilleros
+can_use a_improved_wood_gathering a_improved_gold_gathering
+
+def espadero
+class soldier
+cost 6 2 2 0
+food_cost 1
+time_cost 10
+hp_max 8
+speed 1.25
+armor 0.5
+range 0.1
+sight_range 20
+cooldown 2
+damage 3
+requirements escudos
+can_use 
+can_upgrade_to espadero_cota
+
+def espadero_cota
+class soldier
+cost 7 5 2 0
+food_cost 1
+time_cost 14
+hp_max 8
+speed 1
+speed_on_terrain marsh 0.25  ford 0.5 mountain_pass 0.5
+armor 1
+range 0.1
+sight_range 20
+cooldown 2
+damage 3
+requirements escudos cotas
+can_use 
+
+def espadero_armadura
+class soldier
+cost 8 7 2 0
+food_cost 1
+time_cost 18
+hp_max 8
+speed 0.75
+speed_on_terrain marsh 0 ford 0.25 mountain_pass 0.25 forest 0.5 
+armor 2.5
+range 0.1
+sight_range 20
+cooldown 2
+damage 3
+requirements escudos armaduras
+can_use 
+
+
+;Investigaciones y mejoras:
+
+def escudos
+class upgrade
+cost 0 0 30 0
+time_cost 120
+
+def escudos_mejorados
+class upgrade
+cost 100 20 60 0
+time_cost 240
+effect apply_bonus armor
+requirements escudos torreon
+

@@ -1,0 +1,146 @@
+2025-03-14 22:27:00,467 WARNING: in mina_oro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:00,471 WARNING: in mina_oro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:00,480 WARNING: in mina_hierro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:00,485 WARNING: in mina_hierro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:00,488 WARNING: in bosque: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:00,491 WARNING: in bosque: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:00,495 WARNING: in cantera: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:00,498 WARNING: in cantera: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:17,196 WARNING: in mina_oro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:17,198 WARNING: in mina_oro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:17,201 WARNING: in mina_hierro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:17,204 WARNING: in mina_hierro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:17,207 WARNING: in bosque: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:17,209 WARNING: in bosque: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:17,212 WARNING: in cantera: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:17,214 WARNING: in cantera: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:33,123 WARNING: in mina_oro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:33,125 WARNING: in mina_oro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:33,127 WARNING: in mina_hierro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:33,128 WARNING: in mina_hierro: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:33,130 WARNING: in bosque: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:33,131 WARNING: in bosque: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:33,133 WARNING: in cantera: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_time'
+2025-03-14 22:27:33,134 WARNING: in cantera: <class 'soundrts.worldresource.Deposit'> doesn't have any attribute called 'extraction_qty'
+2025-03-14 22:27:35,821 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:27:35,822 WARNING: get: unknown unit: 'footman' (in ai.txt)
+2025-03-14 22:27:35,824 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:27:35,829 WARNING: no value found for atronador.title (check style.txt)
+2025-03-14 22:27:35,949 WARNING: no value found for atronador.noise (check style.txt)
+2025-03-14 22:27:38,828 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:27:38,830 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:27:38,838 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:27:38,843 WARNING: get: unknown unit: 'catapult' (in ai.txt)
+2025-03-14 22:27:38,849 WARNING: get: unknown unit: 'new_flyingmachine' (in ai.txt)
+2025-03-14 22:27:38,853 WARNING: get: unknown unit: 'priest' (in ai.txt)
+2025-03-14 22:27:38,859 WARNING: get: unknown unit: 'mage' (in ai.txt)
+2025-03-14 22:27:38,865 WARNING: get: unknown unit: 'darkarcher' (in ai.txt)
+2025-03-14 22:27:38,869 WARNING: get: unknown unit: 'dragon' (in ai.txt)
+2025-03-14 22:27:38,875 WARNING: get: unknown unit: 'flyingmachine' (in ai.txt)
+2025-03-14 22:27:41,963 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:27:41,967 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:27:41,973 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:27:48,030 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:27:48,032 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:27:48,038 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:27:54,053 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:27:54,058 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:27:54,068 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:00,068 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:00,070 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:00,074 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:02,547 WARNING: no value found for pelele_orco.ground (check style.txt)
+2025-03-14 22:28:02,858 WARNING: no value found for pelele_orco.noise (check style.txt)
+2025-03-14 22:28:06,089 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:06,090 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:06,093 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:12,118 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:12,122 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:12,128 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:12,418 WARNING: no value found for pelele_orco.attack (check style.txt)
+2025-03-14 22:28:13,021 WARNING: no value found for guerrero_clan.launch_matk (check style.txt)
+2025-03-14 22:28:13,046 WARNING: no value found for guerrero_clan.matk_hit_vs (check style.txt)
+2025-03-14 22:28:13,174 WARNING: no value found for pelele_orco.launch_matk (check style.txt)
+2025-03-14 22:28:13,504 WARNING: no value found for pelele_orco.matk_hit_vs (check style.txt)
+2025-03-14 22:28:13,819 WARNING: no value found for pelele_orco.proportion_9 (check style.txt)
+2025-03-14 22:28:17,303 WARNING: no value found for pelele_orco.proportion_8 (check style.txt)
+2025-03-14 22:28:18,543 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:18,546 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:18,552 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:22,567 WARNING: no value found for pelele_orco.proportion_7 (check style.txt)
+2025-03-14 22:28:24,567 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:24,571 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:24,576 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:26,155 WARNING: no value found for pelele_orco.proportion_6 (check style.txt)
+2025-03-14 22:28:28,128 WARNING: no value found for pelele_orco.noise_if_damaged (check style.txt)
+2025-03-14 22:28:30,580 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:30,582 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:30,585 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:32,041 WARNING: no value found for pelele_orco.proportion_5 (check style.txt)
+2025-03-14 22:28:36,241 WARNING: no value found for pelele_orco.proportion_4 (check style.txt)
+2025-03-14 22:28:36,597 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:36,600 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:36,604 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:41,754 WARNING: no value found for pelele_orco.proportion_3 (check style.txt)
+2025-03-14 22:28:42,613 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:42,615 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:42,618 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:43,968 WARNING: no value found for pelele_orco.noise_if_very_damaged (check style.txt)
+2025-03-14 22:28:45,894 WARNING: no value found for pelele_orco.proportion_2 (check style.txt)
+2025-03-14 22:28:48,646 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:48,652 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:48,664 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:51,182 WARNING: no value found for pelele_orco.proportion_1 (check style.txt)
+2025-03-14 22:28:54,653 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:28:54,655 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:28:54,658 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:28:55,300 WARNING: no value found for pelele_orco.proportion_0 (check style.txt)
+2025-03-14 22:29:00,781 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:00,784 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:00,789 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:06,806 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:06,810 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:06,816 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:12,821 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:12,823 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:12,827 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:18,844 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:18,849 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:18,860 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:24,866 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:24,868 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:24,872 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:30,885 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:30,888 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:30,891 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:36,910 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:36,913 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:36,920 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:37,813 WARNING: no value found for atronador.attack (check style.txt)
+2025-03-14 22:29:38,413 WARNING: no value found for atronador.launch_ratk (check style.txt)
+2025-03-14 22:29:39,643 WARNING: no value found for guerrero_clan.shouts (check style.txt)
+2025-03-14 22:29:39,663 WARNING: no value found for atronador.ratk_hit_vs (check style.txt)
+2025-03-14 22:29:39,669 WARNING: no value found for atronador.ratk_hit (check style.txt)
+2025-03-14 22:29:42,928 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:42,931 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:42,935 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:48,947 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:48,951 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:48,955 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:29:53,463 ERROR: 
+Traceback (most recent call last):
+  File "soundrts\world.py", line 371, in update
+  File "soundrts\worldunit.py", line 1795, in update
+  File "soundrts\worldaction.py", line 59, in update
+  File "soundrts\worldunit.py", line 1741, in action_reach_and_aim
+  File "soundrts\worldunit.py", line 1596, in _reach
+  File "soundrts\worldunit.py", line 1574, in _try
+  File "soundrts\worldunit.py", line 1569, in _must_not_go_to
+  File "soundrts\worldunit.py", line 1563, in _must_hold
+AttributeError: 'NoneType' object has no attribute 'smart_units'
+2025-03-14 22:29:55,000 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:29:55,007 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:29:55,016 WARNING: get: unknown unit: 'archer' (in ai.txt)
+2025-03-14 22:30:01,049 WARNING: get: unknown unit: 'peasant' (in ai.txt)
+2025-03-14 22:30:01,054 WARNING: get: unknown unit: 'knight' (in ai.txt)
+2025-03-14 22:30:01,057 WARNING: get: unknown unit: 'archer' (in ai.txt)
